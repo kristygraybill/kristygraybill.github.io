@@ -11,7 +11,7 @@
 <style>
 
 body {
-    background-color: #2f2928;
+    background-color: #2f2928!important;
      }
 
 p {
@@ -25,31 +25,62 @@ p {
     
 }
 
+.nowrap{
+    inline-size: 150px;
+}
+
+.content-2{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
 .content{
-    margin-top:15%;
+    margin-top:15%!important;
     paint-order:text-stroke;
 }
 
 h1 {
     color: white;
     text-align: center;
-    font-size: 4.3em;
-    letter-spacing: .0125em;
+    font-size: 4.3em!important;
+    letter-spacing: .0125em!important;
     text-shadow: 
         -3px 3px 0px #007076;
-    margin: 0px;
+    margin: 24px 0px!important;
+    text-transform: none!important;
+    line-height:.8em!important;
     }
 
+
+h5 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size:0.75em;
+    text-transform: capitalize!important;
+    color:#858585!important;
+}
 #firstname{
     font-family: 'Fira Sans', sans-serif;
     font-weight:900;
     font-style:italic;
-    letter-spacing: .05em;
+    letter-spacing: .05em!important;
 }
 #lastname{
     font-family: 'Fira Sans', sans-serif;
     font-weight:300;
     font-style:italic;
+}
+#header{
+    background-color: #272423!important;
+    height:5.5em!important;
+
 }
 
 #namespace{
@@ -65,43 +96,14 @@ font-size: .5em;
     color: #A5A09F;
 }
 
-a:link#byme, a:visited#byme {
-    color: #000;
-    border: solid 1px #272423;
-    background-size: 100% 200%;
-    padding: 12px 17px;
-    background-image: linear-gradient(to top, #272423 50%, #2f2928 50%);
-    transition: background-position .5s;
-    -webkit-transition: background-position .5s;
-    -moz-transition: background-position .5s;
-}
-
-a:hover#byme {
-    border: solid 1px #272423;
-    background-position: 0% -100%;
-}
-
-
-
 a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
-    border: solid 2px #007076;
     margin: .125em;
-    background-size: 100% 200%;
-    background-image: linear-gradient(to top, #007076 50%, #2f2928 50%);
     display: inline-block;
-    margin-top: 10px;
-    transition: background-position .5s;
-        -webkit-transition: background-position .5s;
-        -moz-transition: background-position .5s;
 }
 
-a:hover {
-    text-color: #2f2928;
-    background-position: 0% -100%;
-}
 
 
 .links {
@@ -114,6 +116,15 @@ a:hover {
     text-align:center;
     font-size: .75em;
 }
+
+#header nav > ul > li {
+        border-top:4px solid #272423;
+}
+
+#header nav > ul > li:hover {
+        border-top:4px solid #AFB035;
+}
+
 
 a:link.first ~ a {
     margin-left:15px;
@@ -133,10 +144,15 @@ a:link.first ~ a {
 </style>
 
 
-
+<title>Multiverse by HTML5 UP</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-
 <body>
+
+
 <div>
 <!-- Tracking -->
 <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
@@ -149,17 +165,31 @@ a:link.first ~ a {
   ga('send', 'pageview');
 
 </script>
-    <div class="content">
+
+                    <!-- Header -->
+                    <header id="header">
+                        <h5><strong>Multiverse</strong> by HTML5 UP</h5>
+                        <nav>
+                            <ul>
+                                <li><a href="gallery.html" >Art</a></li>
+                                <li><a href="http://www.behance.net/graybill" target="" title="Kristy's Behance Design Portfolio" >Design</a></li>
+                                <li><a href="https://www.linkedin.com/in/kristygraybill/" >About</a></li>
+                                <li><a href="index.html" >Home</a></li>
+                            </ul>
+                        </nav>
+                </header>
+
+
+    <div class="content-2">
 		<h1>
             <span id="firstname">kristy</span><span id="namespace"> </span> <span id="lastname">graybill</span>
         </h1>
-    	<p><span id="magenta">Empathetic Human</span>  <span id="green">/</span>  <span style="color:#AFB035">Lifelong Learner</span></p>
+    	<p><span class="nowrap" id="magenta">Friendly Human</span>  <span id="green">+</span>  <span class="nowrap" style="color:#AFB035;">Lifelong Learner</span></p>
 
 	<div class="links">
         <!-- <a href="http://www.behance.net/graybill" target="" title="Kristy's Behance Design Portfolio">Art</a> -->
-	<a href="http://www.behance.net/graybill" target="" title="Kristy's Behance Design Portfolio">Design</a>
         <!-- <a href="" id="byme" title="In progress.">Curious <object type="image/svg+xml" class="icon-que" data="img/que.svg" alt="?"></object> -->
-	<a class="first" href="https://www.linkedin.com/in/kristygraybill/" target="" title="Kristy's LinkedIn profile">LinkedIn</a>
+
     </div>
 		
 </div>
