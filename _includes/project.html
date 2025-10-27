@@ -1,0 +1,25 @@
+
+<a class="project__link" href="">
+    <div class="project" style="background-color: {{ include.color }}">
+    
+      <div class="descriptions">
+          {% if include.tags %}
+            <ul class="project__tag">
+              {% for tag in include.tags %}
+                <li class="project__tag">{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+        <div class="project__content">
+          <h3 class="project__title">{{ include.title }}</h3>
+          <p class="project__client">{{ include.client }}</p>
+        </div>
+      </div>
+
+        {% if include.image %}
+          <img src="{{ include.image }}" alt="{{ include.title }}" class="project__image">
+        {% endif %}
+
+    </div>
+</a>
