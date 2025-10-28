@@ -1,9 +1,31 @@
+- title: A Task Management App
+  client: Free Library of Philadelphia
+  image: /images/grf-Grocery-Vendors.png
+  description: Redesigned event discovery for the Free Library.
+  tags: [A New Product]
+  color: "#D7B0D8"
+
+- title: Receiving App
+  client: Kroger - Grocery Retailer
+  image: /images/grf-Grocery-Delivery.png
+  description: How might we help improve the accuracy of deliveries arriving in stores?
+  tags: [Process Mapping]
+  color: "#dfdad6"
+
+- title: Summer Reading
+  client: Free Library of Philadelphia
+  image: /images/grf-Graphic-Summer-Reading.png
+  description: How might we help improve the accuracy of deliveries arriving in stores?
+  tags: [Branding and Print Design]
+  color: "#fed217"
+
 - title: In-House Design Services
   client: Free Library of Philadelphia
   image: /images/grf-Library-Comms.png
   description: Redesigned event discovery for the Free Library.
-  tags: [Strategy, Research, Design, Testing, Delivery]
+  tags: [Service Design]
   color: "#b8b017"
+  link: ..\..\_posts\2025-10-24-inhouse-design-services
   
   
 - title: Messaging Observational Study
@@ -12,4 +34,6 @@
   description: Redesigned event discovery for the Free Library.
   tags: [Research]
   color: "#dfebe0"
+
+
 

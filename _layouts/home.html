@@ -7,13 +7,14 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
+<!--  {{ content }}-->
 
 
   <div class="projects__list">
 
   {% for project in site.data.projects %}
     {% include project.html
+    link=project.link
        image=project.image
        title=project.title
        client=project.client
@@ -42,8 +43,6 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
-  {%- endif -%}
--->
-  </div>
+ <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}-->
 </div>
