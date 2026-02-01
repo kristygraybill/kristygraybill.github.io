@@ -1,0 +1,164 @@
+<div class="segment-split" style="background-color: {{ include.segment.bg_color | default: 'transparent' }};">
+<div class="row">
+
+    <!--
+    LEFT COLUMN
+  -->
+
+  <div class="segment-left col-{{ include.segment.left.col | default: 6 }}">
+    {% case include.segment.left.type %}
+
+    <!-- Cover -->
+      {% when "cover" %}
+        <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:contain; height:100%;"></div>
+
+    <!-- Image -->
+      {% when "image" %}
+        <div class="segment-image">
+            <img class="responsive" src="{{ include.segment.left.src | relative_url }}">
+        </div>
+
+    <!-- Text -->
+      {% when "text" %}
+        <div class="segment-text" style="padding:2em;">
+          {% if include.segment.left.label %}
+            <p class="segment-label label" style="color: {{ include.segment.left.header_color | default: 'inherit' }};">{{ include.segment.left.label }}</p>
+          {% endif %}
+          {% if include.segment.left.header %}
+            <h2 class="segment-header header" style="color: {{ include.segment.left.header_color | default: 'inherit' }};">{{ include.segment.left.header }}</h2>
+          {% endif %}
+          <div class="segment-body" style="color: {{ include.segment.left.body_color | default: 'inherit' }};">{{ include.segment.left.body }}</div>
+        </div>
+
+      {% when "include" %}
+        {% include project/{{ include.segment.left.name }}.html %}
+    {% endcase %}
+  </div>
+
+
+
+  <!--
+    RIGHT COLUMN
+  -->
+
+    {% if include.segment.right %}
+    <div class="segment-right col-{{ include.segment.right.col | default: 6 }}">
+    {% case include.segment.right.type %}
+    
+    <!-- Cover -->
+    {% when "cover" %}
+        <div class="segment-cover" style="background-image:url('{{ include.segment.right.src | relative_url }}'); background-size:cover; height:100%;">
+        </div>
+
+    <!-- Multiple Images -->
+    {% when "image" %}
+        <div class="segment-image">
+            {% for images in include.segment.right.images %}
+            <div class="segment-image"
+                style="
+                    background-color: {{ callout.bg_color | default: 'transparent' }};">
+                    <figure>
+                        <img class="responsive" src="{{ images.src | relative_url }}" alt="{{ images.alt | default: '' }}">
+                        {% if images.caption %}
+                        <figcaption>{{ images.caption }}</figcaption>
+                        {% endif %}
+                    </figure>
+
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Callout -->
+    {% when "callout" %}
+        <div class="segment-callout">
+            {% for callout in include.segment.right.callouts %}
+            <div class="callout"
+                style="
+                    background-color: {{ callout.bg_color | default: 'transparent' }};
+                ">
+
+                {% if callout.header %}
+                <p class="header" style="color: {{ callout.header_color | default: 'inherit' }};">
+                    {{ callout.header }}</p>
+                {% endif %}
+
+                {% if callout.sub %}
+                <p class="sub" style="color: {{ callout.sub_color | default: 'inherit' }};">
+                    {{ callout.sub }}</p>
+                {% endif %}
+
+                {% if callout.text %}
+                <p class="text" style="color: {{ callout.text_color | default: 'inherit' }};">
+                    {{ callout.text }}</p>
+                {% endif %}
+
+
+            </div>
+            {% endfor %}
+        </div>
+
+    <!-- Text -->
+    {% when "text" %}
+        <div class="segment-text" style="padding:2em;">
+          {% if include.segment.right.label %}
+            <p class="segment-label label" style="color: {{ include.segment.right.header_color | default: 'inherit' }};">{{ include.segment.right.label }}</p>
+          {% endif %}
+          {% if include.segment.right.header %}
+            <h2 class="segment-header header" style="color: {{ include.segment.right.header_color | default: 'inherit' }};">{{ include.segment.right.header }}</h2>
+          {% endif %}
+            <div class="segment-body" style="color: {{ include.segment.right.body_color | default: 'inherit' }};">{{ include.segment.right.body }}</div>
+        </div>
+
+    {% when "include" %}
+        {% include project/{{ include.segment.right.name }}.html %}
+    {% endcase %}
+  </div>
+  {% endif %}
+
+</div>
+  <!-- Gallery -->
+{% if include.segment.gallery and include.segment.gallery.images %}
+  <div class="segment-gallery row">
+    {% for item in include.segment.gallery.images %}
+      <figure class="col-{{ item.col | default: 4 }}">
+        <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
+        {% if item.caption %}
+          <figcaption>{{ item.caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+{% endif %}
+
+
+<!-- Icons -->
+  {% if include.segment.icons and include.segment.icons.sets %}
+    {% if include.segment.label %}
+      <div class="segment-icon row">
+          <p class="segment-label label"
+              style="color: {{ include.segment.header_color | default: 'inherit' }};">
+              {{ include.segment.label }}
+          </p>
+      </div>
+    {% endif %}
+    <div class="row">
+        <div class="segment-label-col row">
+            {% for item in include.segment.icons.sets %}
+            <div class="col-{{ sets.col | default: 4 }}">
+                {% if item.fa %}
+                <i class="fa-solid fa-{{ item.fa | default:'desktop' }}"></i>
+                {% endif %}
+
+                {% if item.header %}
+                <h4>{{ item.header }}</h4>
+                {% endif %}
+
+                {% if item.text %}
+                <p>{{ item.text }}</p>
+                {% endif %}
+              </div>
+              {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+</div>
