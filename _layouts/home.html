@@ -1,48 +1,19 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="home">
-  {%- if page.title -%}
+<section class="home">
+
+  {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {% endif %}
 
-<!--  {{ content }}-->
+  <div class="projects-list">
+    {% assign projects = site.ux | concat: site.motion | concat: site.graphic | concat: site.personal %}
 
+    {% for project in projects %}
+      {% include home/project-card.html project=project %}
+    {% endfor %}
+  </div>
 
-  <div class="projects__list">
-
-  {% for project in site.data.projects %}
-    {% include project.html
-    link=project.link
-       image=project.image
-       title=project.title
-       client=project.client
-       tags=project.tags
-       color=project.color
-       %}
-
-  {% endfor %}
-<!-- 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}-->
-</div>
+</section>

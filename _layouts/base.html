@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {% include base-components/head.html %}
+</head>
+
+<body class="page page--{{ page.layout | default: 'default' }}">
+{% include base-components/head.html %}
+  {% include navigation.html %}
+
+  <main id="content" class="site-content">
+    {{ content }}
+  </main>
+
+  {% include base-components/footer.html %}
+
+  {% if page.custom_js %}
+    <script src="{{ page.custom_js | relative_url }}"></script>
+  {% endif %}
+</body>
+</html>
