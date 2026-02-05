@@ -1,24 +1,34 @@
-<a class="project__link" href="{{ project.url | relative_url }}">
-  <div class="project" style="background-color: {{ project.theme_color | default: '#ccc' }}">
+<div class="col-md-3">
+  <a class="project__link" href="{{ include.link }}">
+      <div class="project" style="background-color: {{ include.color }}">
+        <div style="background-image: linear-gradient(to bottom, var(--porridge), {{ include.color }} );">
+      
+        <div class="descriptions">
 
-    <div class="descriptions">
-      {% if project.tags %}
-        <ul class="project__tag">
-          {% for tag in project.tags %}
-            <li class="project__tag">{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+          <div class="project__content">
 
-      <div class="project__content">
-        <h3 class="project__title">{{ project.title }}</h3>
-        <p class="project__client">{{ project.client }}</p>
+            {% if include.tags %}
+              <ul class="project__tag">
+                {% for tag in include.tags %}
+                  <li class="project__tag">{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            <h3 class="project__title">{{ include.title }}</h3>
+            <p class="project__client">{{include.client }}</p>
+            <p class="project__summary">
+              {{ include.summary | default: "test" }}
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    {% if project.hero and project.hero.image %}
-      <img src="{{ project.hero.image | relative_url }}" alt="{{ project.title }}" class="project__image">
-    {% endif %}
 
-  </div>
-</a>
+          {% if include.image %}
+            <img src="{{ include.image }}" alt="{{ include.title }}" class="project__image">
+          {% endif %}
+
+      </div>
+  </a>
+</div>

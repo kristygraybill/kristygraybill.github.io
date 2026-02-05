@@ -5,18 +5,31 @@
     LEFT COLUMN
   -->
 
-  <div class="segment-left col-{{ include.segment.left.col | default: 6 }}">
-    {% case include.segment.left.type %}
+<div class="segment-left col-lg-{{ include.segment.left.col | default: 6 }} col-md-12">
+  {% case include.segment.left.type %}
 
     <!-- Cover -->
       {% when "cover" %}
         <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:contain; height:100%;"></div>
 
-    <!-- Image -->
-      {% when "image" %}
+    <!-- Multiple Images -->
+    {% when "image" %}
         <div class="segment-image">
-            <img class="responsive" src="{{ include.segment.left.src | relative_url }}">
+            {% for images in include.segment.left.images %}
+            <div class="segment-image"
+                style="
+                    background-color: {{ callout.bg_color | default: 'transparent' }};">
+                    <figure>
+                        <img style="position: {{ images.position | default: 'initial' }};" class="responsive" src="{{ images.src | relative_url }}" alt="{{ images.alt | default: '' }}">
+                        {% if images.caption %}
+                        <figcaption>{{ images.caption }}</figcaption>
+                        {% endif %}
+                    </figure>
+
+            </div>
+            {% endfor %}
         </div>
+
 
     <!-- Text -->
       {% when "text" %}
@@ -42,7 +55,7 @@
   -->
 
     {% if include.segment.right %}
-    <div class="segment-right col-{{ include.segment.right.col | default: 6 }}">
+<div class="segment-right col-lg-{{ include.segment.right.col | default: 6 }} col-md-12">
     {% case include.segment.right.type %}
     
     <!-- Cover -->
@@ -120,7 +133,7 @@
 {% if include.segment.gallery and include.segment.gallery.images %}
   <div class="segment-gallery row">
     {% for item in include.segment.gallery.images %}
-      <figure class="col-{{ item.col | default: 4 }}">
+      <figure class="col-md-{{ item.col | default: 4 }}">
         <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
         {% if item.caption %}
           <figcaption>{{ item.caption }}</figcaption>
@@ -144,9 +157,11 @@
     <div class="row">
         <div class="segment-label-col row">
             {% for item in include.segment.icons.sets %}
-            <div class="col-{{ sets.col | default: 4 }}">
-                {% if item.fa %}
-                <i class="fa-solid fa-{{ item.fa | default:'desktop' }}"></i>
+            <div class="col-md-{{ sets.col | default: '3' }}">
+                {% if item.material %}
+
+                    <i class="mi material-icons">{{ item.material | default:'check' }}</i>
+
                 {% endif %}
 
                 {% if item.header %}
