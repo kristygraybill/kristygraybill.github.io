@@ -4,16 +4,83 @@ layout: base
 
 <section class="home">
 
-  {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
+<!-- <div class="row" style="padding: 0px; margin: 0px;">
+    <div class="col-12" style="height:4em; background:url('images/bg-abstract-pattern-tr.png'); background-size: cover;">
+    </div>
+  </div>--> 
 
-  <div class="projects-list">
-    {% assign projects = site.ux | concat: site.motion | concat: site.graphic | concat: site.personal %}
+ <section id="UX">
+  <div class="row UX">
+    <div class="row col-lg-4 col-md-12">
+    <h2>UX/UI Design</h2>
+    <p class="dek">Experience supporting associate-facing tools and services&mdash;with proven, measurable impact
+</p>
+      </div>
 
-    {% for project in projects %}
-      {% include home/project-card.html project=project %}
-    {% endfor %}
+      <div class="row col-lg-8 col-md-12">
+
+    <div class="projects__list">
+      {% for project in site.ux %}
+        {% include home/project-card.html 
+           link=project.url 
+           image=project.image 
+           title=project.title 
+           client=project.client 
+           summary=project.summary 
+           tags=project.tags 
+           color=project.color %}
+      {% endfor %}
+    </div>
   </div>
+  </div>
+</section>
+
+ <section id="Graphic">
+  <div class="row graphic">
+    <div class="row">
+      <h2>Marketing & Branding</h2>
+      <p class="dek">Regional and industry recognition for visual design across print and digital marketing</p>
+    </div>
+
+    <div class="row">
+      <div class="projects__list">
+        {% for project in site.graphic %}
+          {% include home/image-card.html 
+            link=project.url 
+            image=project.image 
+            title=project.title 
+            client=project.client 
+            tags=project.tags 
+            color=project.color %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Motion">
+  <div class="row Motion">
+    <div class="row">
+      <h2>Motion Design</h2>
+          <p class="dek">6+ years of Motion experience across social, editorial, & broadcast</p>
+          </div>
+  <div class="video">
+<iframe class="float-left;" src="https://player.vimeo.com/video/183830078?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="720" height="398" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Motion Graphics Reel"></iframe>
+</div>
+<div class="row">
+    <div class="projects__list">
+      {% for project in site.motion %}
+        {% include home/project-card.html 
+           link=project.url 
+           image=project.image 
+           title=project.title 
+           client=project.client 
+           tags=project.tags 
+           color=project.color %}
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+</section>
 
 </section>
