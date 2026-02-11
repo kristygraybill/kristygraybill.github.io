@@ -6,7 +6,7 @@ tags: [Information Architecture]
 image: "images/FLP-RBD.png"
 id: myday
 summary: "Making Rare Library Collections easy to find and use"
-color: "#ef9fa0"
+color: "#F79283"
 link: /projects/receiving-app
 
 hero:

@@ -1,10 +1,10 @@
 ---
 layout: project-graphic
-title: "Visitor Guide"
+title: "Digital Marketing"
 client: "Visit ABQ"
-theme_color: "#D7B0D8"
-tags: "Process Mapping"
-image: "images/abq-landing-page.webp"
+theme_color: "#F79283"
+tags: [Landing Page and Newsletters]
+image: "images/abq-digital-abstract.png"
 id: summerreading
 description: >
   Redesigned event discovery for the Free Library.

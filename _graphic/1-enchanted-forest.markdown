@@ -1,9 +1,9 @@
 ---
 layout: project-graphic
-title: "Fundraiser Branding"
+title: "Enchanted Forest"
 client: "Schuylkill Center"
-tags: "Process Mapping"
-image: "images/SCEE-Graphic-Enchanted-Forest.png"
+tags: [Fundraiser Branding]
+image: "images/SCEE-Enchanted-Forest-Sample.png"
 id: summerreading
 description: >
   Redesigned event discovery for the Free Library.
