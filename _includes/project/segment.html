@@ -10,7 +10,7 @@
 
     <!-- Cover -->
       {% when "cover" %}
-        <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:contain; height:100%;"></div>
+        <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:cover; height:100%;"></div>
 
     <!-- Multiple Images -->
     {% when "image" %}
@@ -133,7 +133,7 @@
 {% if include.segment.gallery and include.segment.gallery.images %}
   <div class="segment-gallery row">
     {% for item in include.segment.gallery.images %}
-      <figure class="col-md-{{ item.col | default: 4 }}">
+      <figure class="col-{{ item.col | default: 4 }}">
         <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
         {% if item.caption %}
           <figcaption>{{ item.caption }}</figcaption>
@@ -155,9 +155,9 @@
       </div>
     {% endif %}
     <div class="row">
-        <div class="segment-label-col row">
+        <div class="segment-label-col row icon">
             {% for item in include.segment.icons.sets %}
-            <div class="col-md-{{ sets.col | default: '3' }}">
+            <div class="col-md-{{ item.col | default: '3' }}">
                 {% if item.material %}
 
                     <i class="mi material-icons">{{ item.material | default:'check' }}</i>
@@ -165,7 +165,7 @@
                 {% endif %}
 
                 {% if item.header %}
-                <h4>{{ item.header }}</h4>
+                <h2>{{ item.header }}</h2>
                 {% endif %}
 
                 {% if item.text %}

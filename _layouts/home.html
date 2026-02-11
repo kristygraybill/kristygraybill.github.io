@@ -12,7 +12,7 @@ layout: base
  <section id="UX">
   <div class="row UX">
     <div class="row col-lg-4 col-md-12">
-    <h2>UX/UI Design</h2>
+    <h2>research  strategy  & design</h2>
     <p class="dek">Experience supporting associate-facing tools and services&mdash;with proven, measurable impact
 </p>
       </div>
@@ -32,17 +32,58 @@ layout: base
       {% endfor %}
     </div>
   </div>
+
+
+  <div class="col-12 border">
+  </div>
+
   </div>
 </section>
 
+
+
+<section id="Motion">
+  <div class="row Motion">
+    <div class="col-lg-4 col-md-12">
+      <h2>motion</h2>
+          <p class="dek">Over six years of focused Motion experience across social, editorial, & broadcast</p>
+          </div>
+
+
+          <div class="video col-lg-8 col-md-12">
+
+
+<img style="" src="images\W-rabies.gif">
+<img style="" src="images\ybe-paperfolds.gif">
+<img src="images\abq-365-logo.gif">
+<img src="images\W-anonymous.gif">
+<img style="" src="images\W-dorsey.gif">
+<img src="images\ybe-perspective.gif">
+<!--<img style="" src="images\ybe-fishbowl.gif"> -->
+
+
+</div>
+<div class="row border-bot">
+
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+
  <section id="Graphic">
   <div class="row graphic">
-    <div class="row">
-      <h2>Marketing & Branding</h2>
+        <div class="row col-lg-4 float-right">
+      <h2>marketing, branding & visual design</h2>
       <p class="dek">Regional and industry recognition for visual design across print and digital marketing</p>
     </div>
 
-    <div class="row">
+
+    <div class="row col-lg-8 float-left">
       <div class="projects__list">
         {% for project in site.graphic %}
           {% include home/image-card.html 
@@ -55,32 +96,11 @@ layout: base
         {% endfor %}
       </div>
     </div>
+
+
   </div>
 </section>
 
-<section id="Motion">
-  <div class="row Motion">
-    <div class="row">
-      <h2>Motion Design</h2>
-          <p class="dek">6+ years of Motion experience across social, editorial, & broadcast</p>
-          </div>
-  <div class="video">
-<iframe class="float-left;" src="https://player.vimeo.com/video/183830078?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="720" height="398" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Motion Graphics Reel"></iframe>
-</div>
-<div class="row">
-    <div class="projects__list">
-      {% for project in site.motion %}
-        {% include home/project-card.html 
-           link=project.url 
-           image=project.image 
-           title=project.title 
-           client=project.client 
-           tags=project.tags 
-           color=project.color %}
-      {% endfor %}
-    </div>
-  </div>
-  </div>
-</section>
+
 
 </section>

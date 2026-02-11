@@ -10,7 +10,7 @@ color: "#799AA7"
 link: /projects/receiving-app
 
 hero:
-  bg_color: "var(--nimbus)"
+  bg_color: #FFFFFF
   left:
     type: cover
     src: "images/MD-delivery.png"
@@ -75,14 +75,16 @@ segments:
       images:
         - src: "images/MD-Process.png"
           alt: 
+          col: 6
           caption: "Stakeholder Mapping"
         - src: "images/MD-painpoints.png"
+          col: 6
           alt: 
           caption: "User Mapping"
 
 
   - layout: split
-    bg_color: "var(--seafoam)"
+    bg_color: "var(--electric)"
     left:
      col: 6
      type: text
@@ -90,7 +92,7 @@ segments:
      header: "How did research shape the design? "
      body: >
         Research revealed many variables among stores and how they operated as a result of their individual size, staff, and the kind of delivery, as examples.
-     header_color: "var(--oak)"
+     header_color: "var(--tokyo)"
     right:
       col: 6
       type: callout

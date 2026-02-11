@@ -1,10 +1,10 @@
 ---
 layout: project-graphic
-title: "Event Branding Suite | Summer Reading"
+title: "Summer Reading "
 client: "Free Library of Philadelphia"
 theme_color: "#D7B0D8"
-tags: "Process Mapping"
-image: "/images/grf-Graphic-Summer-Reading.png"
+tags: [Event Branding]
+image: "/images/FLP-Summer-Reading-abstract.png"
 id: summerreading
 description: >
   Redesigned event discovery for the Free Library.

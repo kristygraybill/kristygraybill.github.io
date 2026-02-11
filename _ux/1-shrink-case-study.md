@@ -13,7 +13,7 @@ link: /ux/shrink-case-study
 
 
 hero:
-  bg_color: "var(--seafoam)"
+  bg_color: "#FFFFFF"
   left:
     type: cover
     src: "images/DSD-vendor.png"
@@ -24,10 +24,10 @@ hero:
     label: The Problem
     body: >
         <p>
-        I served as the lead designer for an associate-facing mobile app that helped stores confirm the receipt of product from distribution centers and help manage Night Crew tasks.
+        Our task management app assists Night Crew Managers with managing and reporting their workload. As we celebrated the launch of a new feature that helped stores accurately receive product from distribution centers, Business Partners identified a new opportunity related to a different role in the company receiving product.
         </p> 
-        <p>
-        When our business partners identified opportunities related to a different role in the company whose responsibilities included receiving products, we agreed to investigate how and if we might help.
+        <p style="font-weight: 700; color: var(--oak);letter-spacing: -.02em;">
+        The Receiver role received product shipped and handled directly by vendors. Enterprise-wide, this role was missing opportunities to receive millions of dollars worth of credits for damaged and outdated products that could be returned.
         </p>
     body_color: "var(--earth)"
 
@@ -54,23 +54,40 @@ outline_bg_color: "var(--porridge)"
 segments:
   - layout: split
     bg_color: "var(--earth)"
-    left:
+    right:
       type: image
       images:
         - src: "images/dsd_why-how.png"
           alt:
           caption: 
-    right:
+    left:
       type: text
       label: "Current State"
       header: "What we know."
       body: >
-         <p>We began our project recognizing that many Receiver responsibilities did not intersect with our application, and some Receivers may not be familiar with our application at all.</p>
-         <p>We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product.</p>
-         <p>We knew a separate team was working to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their limitations and their current and future development.</p>
+         <p>Our application, once focused soley on Night Crew Managers and Night Crew work, was now experiencing an identity crisis after our last two releases. </p>
 
-      header_color: "var(--golden)"
+      header_color: "var(--seafoam)"
       body_color: "var(--porridge)"
+
+    icons:
+      sets:
+      - header: New User Group
+        text: >
+          We recognized that many Receiver responsibilities did not intersect with our application, and some Receivers may not be familiar with our application at all.
+        col: 4
+
+      - header: Primary Causes of Shrink
+        text: >
+          We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product.
+        col: 4
+
+      - header: Other Team's Developments
+        text: >
+         A separate team was working to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their limitations and their current and future development.
+        col: 4
+    
+
 
   - layout: split
     bg_color: "var(--porridge)"
@@ -230,6 +247,6 @@ segments:
         <p>
         Discussions also stirred a need among the team and larger organization to consider better defining the purpose and future trajectory of the application once colloquially referred to as the "Night Crew" application by stores to encompass all receiving activities.
         </p>
-      header_color: "var(--golden)"
+      header_color: "var(--electric)"
       body_color: "var(--porridge)"
 ---
