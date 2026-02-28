@@ -1,23 +1,23 @@
 ---
 layout: project-ux
-title: "Communication Toolkit"
+title: "Institutional Service Design"
 client: "Free Library of Philadelphia"
 tags: [Service Design]
-image: "images/FLP-marketing.png"
+image: "images/FLP-comms-w.png"
 id: myday
-summary: "Empowering users and streamlining internal workflows"
+summary: "Bridging public user needs and internal workflows to strengthen institutional communication."
 color: "#b8b017"
 link: /projects/receiving-app
 
 hero:
-  bg_color: "var(--golden)"
+  bg_color: white
   left:
     type: cover
-    src: "images/FLP-marketing.png"
+    src: "images/FLP-comms-w.png"
   right:
     type: text
     header: "How can a small, in-house design team make a greater impact on event promotion?"
-    header_color: "var(--tokyo)"
+    header_color: "var(--earth)"
     body: >
       <p>
        Event programming is an essential service of a public library and Philadelphia’s Free Library hosts over 30,000 events a year.
@@ -62,17 +62,17 @@ segments:
      type: text
      label: "Value Definition"
      header: "What defines success?"
-     header_color: "var(--tokyo)"
+     header_color: "var(--earth)"
      body: >
         <p>
         We identified three core criteria for success representing non-negotiable interests of major stakeholders and users: ease of use, preservation of brand, and cost in resources which represented both money and time spent by enablers of the service.
         </p>
-     body_color: "var(--tokyo)"
+     body_color: "var(--earth)"
 
 
 
   - layout: split
-    bg_color: "var(--seafoam)"
+    bg_color: "var(--porridge)"
     left:
      col: 6
      type: text
@@ -162,7 +162,7 @@ segments:
       header: "What changed because of this?"
       body: >
         <p>
-        Our delivery-scanning solution was widely adopted in stores, <mark>surpassing forecasts with 90% enterprise-wide adoption</mark>, and earning praise from managers for its ease of use and quick onboarding (which is my personal favorite note).
+        Our delivery-scanning solution was widely adopted in stores, surpassing forecasts with 90% enterprise-wide adoption, and earning praise from managers for its ease of use and quick onboarding (which is my personal favorite note).
         </p>
         <ul>
         <li>

@@ -3,39 +3,48 @@ layout: base
 ---
 
 <section class="home">
+<section id="intro">
+  <div class="row intro">
 
-<!-- <div class="row" style="padding: 0px; margin: 0px;">
-    <div class="col-12" style="height:4em; background:url('images/bg-abstract-pattern-tr.png'); background-size: cover;">
+    <div class="row col-12">
+      <div class="row col-6">
+<h1><span style="color: var(--tokyo);" class="reveal-wrapper 1">Principal<br>Multi-Disciplinary Designer</span></h1>
+<h2><span style="color: var(--earth);" class="reveal-wrapper 2">Based in Philadelphia.</span><br>
+<span style="color: var(--earth);" class="reveal-wrapper 3">Let's dig in!</span></h2>
+      </div>
     </div>
-  </div>--> 
+  </div>
+</section>
+
 
  <section id="UX">
   <div class="row UX">
-    <div class="row col-lg-4 col-md-12">
-    <h2>research  strategy  & design</h2>
-    <p class="dek">Experience supporting associate-facing tools and services&mdash;with proven, measurable impact
-</p>
+    
+    <div class="row col-11">
+      
+      <div class="row col-lg-9 col-md-12">
+        <h1 class="section"><span class="reveal-wrapper">Research + Strategy + Experience Design</h1>
+        <h2><span class="reveal-wrapper">architecture for action</span></h2>
+        <p class="dek">Designing scalable systems for high-utility environments&mdash;with proven, measurable impact. 
+        </p>
       </div>
 
-      <div class="row col-lg-8 col-md-12">
+      <div class="row col-lg-12 col-md-12">
+         <div class="projects__list">
+            {% for project in site.ux %}
+              {% include home/project-card.html 
+                link=project.url 
+                image=project.image 
+                title=project.title 
+                client=project.client 
+                summary=project.summary 
+                tags=project.tags 
+                color=project.color %}
+            {% endfor %}
+          </div>
+        </div>
 
-    <div class="projects__list">
-      {% for project in site.ux %}
-        {% include home/project-card.html 
-           link=project.url 
-           image=project.image 
-           title=project.title 
-           client=project.client 
-           summary=project.summary 
-           tags=project.tags 
-           color=project.color %}
-      {% endfor %}
     </div>
-  </div>
-
-
-  <div class="col-12 border">
-  </div>
 
   </div>
 </section>
@@ -44,28 +53,34 @@ layout: base
 
 <section id="Motion">
   <div class="row Motion">
-    <div class="col-lg-4 col-md-12">
-      <h2>motion</h2>
-          <p class="dek">Over six years of focused Motion experience across social, editorial, & broadcast</p>
-          </div>
+
+    <div class="row col-11">
+
+      <div class="col-lg-10 col-md-12">
+        <h1 class="section"><span class="reveal-wrapper">Motion Graphics</span></h1>
+        <h2><span class="reveal-wrapper">movement as a bridge to understanding</span></h2>
+            <p class="dek">Over six years of focused Motion experience across social, editorial, & broadcast, bringing static concepts to life.</p>
+      </div>
 
 
-          <div class="video col-lg-8 col-md-12">
+      <div class="video col-lg-12 col-md-12">
+        <div class="mo-hov">
+          <img style="" src="images\W-rabies.gif" title="WIRED Magazine">
+        </div>
+        <div class="mo-hov">
+          <img style="" src="images\ybe-brain.gif">
+        </div>
+        <img src="images\abq-365-logo.gif">
+        <img src="images\W-anonymous.gif">
+        <img style="" src="images\W-dorsey.gif">
+        <img src="images\ybe-perspective.gif">
+        <!--<img style="" src="images\ybe-fishbowl.gif"> -->
+      </div>
 
+      <a href="http://vimeo.com/graybill" target="_blank" class="light"><button>More Video Work</Button></a>
 
-<img style="" src="images\W-rabies.gif">
-<img style="" src="images\ybe-paperfolds.gif">
-<img src="images\abq-365-logo.gif">
-<img src="images\W-anonymous.gif">
-<img style="" src="images\W-dorsey.gif">
-<img src="images\ybe-perspective.gif">
-<!--<img style="" src="images\ybe-fishbowl.gif"> -->
+    </div>
 
-
-</div>
-<div class="row border-bot">
-
-  </div>
   </div>
 </section>
 
@@ -77,13 +92,15 @@ layout: base
 
  <section id="Graphic">
   <div class="row graphic">
-        <div class="row col-lg-4 float-right">
-      <h2>marketing, branding & visual design</h2>
-      <p class="dek">Regional and industry recognition for visual design across print and digital marketing</p>
+    <div class="row col-11">
+        <div class="row col-lg-10">
+              <h1 class="section"><span class="reveal-wrapper">Branding & Communication</span></h1>
+              <h2><span class="reveal-wrapper">visual storytelling across touchpoints</span></h2>
+      <p class="dek">Proven expertise in maintaining brand integrity across physical and digital environments with regional and industry recognition</p>
     </div>
 
 
-    <div class="row col-lg-8 float-left">
+    <div class="row col-lg-10">
       <div class="projects__list">
         {% for project in site.graphic %}
           {% include home/image-card.html 
@@ -97,7 +114,7 @@ layout: base
       </div>
     </div>
 
-
+</div>
   </div>
 </section>
 

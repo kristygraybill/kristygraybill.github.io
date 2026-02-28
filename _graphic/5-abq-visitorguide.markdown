@@ -1,37 +1,44 @@
 ---
 layout: project-graphic
-title: "Visual Identity for Gala"
-client: "Schuylkill Center"
-tags: [Print]
-image: "images/SCEE-Enchanted-Forest-Sample.png"
+title: "Layout & Information Design"
+client: "Visit ABQ"
+tags: [Publication Design, ]
+image: "images/abq-visitor-guide-abstract-z.png"
 id: summerreading
 description: >
   Redesigned event discovery for the Free Library.
-
+color: "var(--porridge)"
 
 hero:
+  bg_color: "white"
   left:
     col: 12
     type: image
     images:
-      - src: "images/SCEE-Graphic-Enchanted-Forest.png"
+      - src: "images/abq-visitors-guide-all.png"
 
   right:
+    col: 12
     type: text
-    col: 10
     body: >
-        <p>The Schuylkill Center for Environmental Education desired an update to their annual benefit, Enchanted Forest: Party Beneath the Stars. To entice guests, I wanted to conjure a scene of a magical, star-filled summer night among the trees and animals. I selection a limited palette from the organization's brand, illustrated flora and fauna that could serve as visual motifs across all pieces, and showcased these elements in a strongly vertical invitation so that guests would be welcomed with a dreamy night sky that opened into a forest scene below.</p> 
-    body_color: "var(--earth)"
-  
+      The Official Albuquerque Visitors Guide is an annual publication touting the city's most intriguing attractions, events, dining, and more. Collaborating closely with members of the Marketing, Communication, and Tourism team at Visit Albuquerque on understanding the year's priority messaging and content, I led production of this 80+ page publication. I developed pagination guides, built wireframes of layouts, directed photoshoots, provided art direction, and organized the selection and approval of the guide's cover. 
+
+
+
 segments:
   - layout: split
     bg_color: "var(--earth)"
     left:
+      col: 12
       type: image
       images:
-        - src: "images/SCEE-Enchanted-Forest-tall.png"
+        - src: "images/abq-folder-back.png"
           alt:
           caption: 
+        - src: "images/abq-folder-business-card.png"
+          alt:
+          caption:
+
 
     right:
       type: image
@@ -44,11 +51,4 @@ segments:
           alt: 
           caption: "Elements were applied to a basic suite of templates that allowed general staff to control and easily update content. The photos below show use of these templates, populated with facts by staff"
           caption_color: var(--nimbus)
-
-
-
-
-
-      
-
 ---

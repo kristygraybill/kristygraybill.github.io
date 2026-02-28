@@ -1,6 +1,6 @@
 ---
 layout: project-graphic
-title: "Visit Albuqeruque"
+title: "Print Collateral"
 client: "Visit ABQ"
 theme_color: "#D7B0D8"
 tags: [Print Collateral]
@@ -12,10 +12,46 @@ color: "var(--porridge)"
 link: "/graphic/summer-reading"
 
 hero:
-  bg_color: "var(--seafoam)"
+  bg_color: "white"
   left:
     col: 12
     type: image
     images:
       - src: "images/abq-folder.png"
+
+  right:
+    type: text
+    col: 10
+    body: >
+        <p>The ACVB wished to subtly update their long-established visual identity in this collateral piece. I adapted wood patterns and decorative elements from the existing brand and created a new Southwest-inspired graphic to serve as a backdrop for the logotype. A myriad of vibrant destination photos were chosen for the inside of the folder to contrast with the white, 24# papers often placed inside. </p> 
+    body_color: "var(--earth)"
+  
+segments:
+  - layout: split
+    bg_color: "var(--earth)"
+    left:
+      col: 12
+      type: image
+      images:
+        - src: "images/abq-folder-back.png"
+          alt:
+          caption: 
+        - src: "images/abq-folder-business-card.png"
+          alt:
+          caption:
+
+
+    right:
+      type: image
+      images:
+        - src: "images/SCEE-closeup.png"
+          alt:
+          caption: "A suite of icon sets accompanied each pillar of the non-profit, their simplicity mirroring the silhouettes found in their logo."
+          caption_color: var(--nimbus)
+        - src: "images/SCEE-Enchanted-Forest-table-top-facts.png"
+          alt: 
+          caption: "Elements were applied to a basic suite of templates that allowed general staff to control and easily update content. The photos below show use of these templates, populated with facts by staff"
+          caption_color: var(--nimbus)
+
+
 ---

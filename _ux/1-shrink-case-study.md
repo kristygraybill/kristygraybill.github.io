@@ -1,12 +1,12 @@
 ---
 layout: project-ux
-title: "Tasking App"
-client: "Kroger"
-tags: [End-to-End]
-image: "/images/DSD-vendor.png"
+title: "Decision Support"
+client: "Kroger - Grocery Retailer"
+tags: [Revenue Recovery]
+image: "/images/DSD-vendor-w.png"
 id: DSD
-summary: "Assisting a new user audience with taking informed actions"
-color: "#d7b0d8"
+summary: "Establishing a centralized hub for vendor oversight and store-level decision support."
+color: "var(--seafoam)"
 scolor: "#000"
 link: /ux/shrink-case-study
 
@@ -16,20 +16,19 @@ hero:
   bg_color: "#FFFFFF"
   left:
     type: cover
-    src: "images/DSD-vendor.png"
+    src: "images/DSD-vendor-w.png"
+    col: 5
   right:
     type: text
     header: "How can a 'Task Management' app help prevent shrink?"
     header_color: "var(--oak)"
-    label: The Problem
+    label: Problem + Opportunity
     body: >
         <p>
-        Our task management app assists Night Crew Managers with managing and reporting their workload. As we celebrated the launch of a new feature that helped stores accurately receive product from distribution centers, Business Partners identified a new opportunity related to a different role in the company receiving product.
-        </p> 
-        <p style="font-weight: 700; color: var(--oak);letter-spacing: -.02em;">
-        The Receiver role received product shipped and handled directly by vendors. Enterprise-wide, this role was missing opportunities to receive millions of dollars worth of credits for damaged and outdated products that could be returned.
+        Our team managed a task application for warehouse inventory, but workflows for products delivered directly by vendors existed entirely outside the system. Enterprise data showed that <mark>stores were losing millions in revenue because damaged or expired goods weren't being reported for credit</mark> This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
         </p>
     body_color: "var(--earth)"
+    col: 7
 
 outline_role:
   title: "UX Design Lead"
@@ -57,34 +56,37 @@ segments:
     right:
       type: image
       images:
-        - src: "images/dsd_why-how.png"
-          alt:
-          caption: 
+        - src: "images/dsd-backroom-sample.png"
+          alt: backroom with many pallets of bottled drinks from vendors
+          caption: Sample of back room stock 
+          caption_color: "var(--nimbus)"
     left:
       type: text
       label: "Current State"
-      header: "What we know."
+      header: "What we knew"
       body: >
-         <p>Our application, once focused soley on Night Crew Managers and Night Crew work, was now experiencing an identity crisis after our last two releases. </p>
+         <p>I conducted a series of discovery sessions with stakeholders and cross-functional design teams, documenting insights on a central digital whiteboard. This effort streamlined our focus on shrink, clarified user-centered design challenges, and synchronized our roadmap with adjacent initiatives.</p> 
 
       header_color: "var(--seafoam)"
-      body_color: "var(--porridge)"
+      body_color: "var(--nimbus)"
 
     icons:
       sets:
-      - header: New User Group
+      - header: Focusing Our Goal
         text: >
-          We recognized that many Receiver responsibilities did not intersect with our application, and some Receivers may not be familiar with our application at all.
+          We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product. We understood that the Receiver had many responsibilities beyond this, but we'd need to focus results in this space.
+        col: 4
+      
+      - header: Known Challenges
+        text: >
+          Our existing application was tailored to work related to receiving distribution center product. Receivers' work rarely intersected with this, if at all. We'd need to develop for a net new user who was equipped with separate, third-party tools that they used to receive product.
         col: 4
 
-      - header: Primary Causes of Shrink
-        text: >
-          We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product.
-        col: 4
 
-      - header: Other Team's Developments
+
+      - header: Strategic Partnerships
         text: >
-         A separate team was working to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their limitations and their current and future development.
+         A separate team was working with a vendor to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their current and future development and their limitations.
         col: 4
     
 
@@ -95,78 +97,86 @@ segments:
      col: 8
      type: text
      label: "Discovery Research"
-     header: "What do user responsibilities look like in practice?"
+     header: "What do tasks look like in practice?"
      body: >
-        I led the planning for this research: defining what we needed to learn
-        and creating guidance for in-store interviews, observations, and
-        documentation. This supported a group of consultants conducting <mark>research
-        across a range of stores of different sizes, regions, and markets.</mark> I
-        reviewed interview notes and observation data. And, to help ground my
-        understanding, I participated in several in-store interviews.
+      <p> I led the planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets.And, to help ground my understanding, I participated in several in-store interviews. </p> <p><mark>I translated these findings into maps that showed where the work was breaking down and how different roles and tools interacted. </mark> Additionally, I compiled proto-personas from our conversations to help remind the team of real-world challenges, mental models, and different kinds of Receivers might have different needs. </p> 
     right:
       col: 4
       type: callout
       callouts:
       - sub: "What factors impact receipt of credits and product volume?"
-        bg_color: 
-        sub_color: "var(--oak)"
+        bg_color: "white"
+        sub_color: "var(--stratus)"
 
       - sub: "How might solving this problem impact the Receiver, if at all?"
-        bg_color: 
-        sub_color: "var(--oak)"
+        bg_color: "white"
+        sub_color: "var(--stratus)"
         
       - sub: "What are current perceptions or interactions with our application?"
-        bg_color: 
-        sub_color: "var(--oak)"
+        bg_color: "white"
+        sub_color: "var(--stratus)"
     gallery:
         images:
             - src: "/images/dsd-process-1.png"
               alt: "Receiving workflow"
               caption: Workflow
+              col: 6
             - src: "/images/dsd-process-2.png"
               alt: "Vendor intake"
               caption: Sample
+              col: 6
 
 
   - layout: split
-    bg_color: "var(--seafoam)"
+    bg_color: white
     left:
-     col: 6
+     col: 7
      type: text
      label: "Key Research Findings"
      header: "How did research shape the design? "
      body: >
-        We discovered that the high-priority business problem mapped to lower-priority tasks for a role whose focus was often on immediate needs. After presenting this our partners, suggesting additional institutional changes, we evaluated whether a technical solution could assist in any way.
-     header_color: "var(--oak)"
+        In addition to critical insights into the environment and day-to-day life of a DSD Receiver, we identified a number of gaps and challenges that hindered the success of Receivers. Since many of these gaps intersected with other systems and roles that were far beyond the scope of our product or irrelevant to the current business case, we offered our suggestions and emphasized what role our product team might play in next steps. 
+     header_color: "var(--earth)"
     right:
-      col: 6
+      col: 5
       type: callout
       callouts:
-      - header: "Add value to our users."
-        header_color: "var(--oak)"
-        text: "While receipt of credits and product volume was a high priority for business, there are few ways to achieve these easily and quickly as they often require managing vendors whom the Receiver might have limited insight."
+      - header: Our solution should...
+        sub: >
+          <ul>
+          <li>improve visibility</li>
+          <li>simplify complexities where possible</li>
+          <li>NOT create additional work</li>
+          <li>add value for Receivers AND business</li>
+          </ul>
 
-      - header: "Do not add work."
-        header_color: "var(--oak)"
-        text: "Stores only had one designated Receiver role with limited additional bandwidth. Additional steps in their workflows could risk failure, and would need to fit naturally into their workflows"
 
     icons:
         sets:
-        - material: "desktop_mac"
-          text: "Receivers rely on multiple, required third-party tools and devices."
-          col: 3
-
-        - material: "visibility_off"
-          text: "Limited visibility into other store activities increases coordination effort"
-          col: 3
-
         - material: "forum"
-          text: "Their work is highly time-sensitive and requires constant prioritization and communication"
+          header: Shifting Priorities
+          text: "We observed work environments that constantly pulled Receivers' attention in different directions. Their work is highly time-sensitive and requires constant prioritization and communication."
           col: 3
         
-        - material: "assignment"
-          text: "Receivers recognized our application, but not all interacted with it, noting it related to tertiary duties."
+
+        - material: "desktop_mac"
+          header: Many Tools + Devices
+          text: "We observed Receivers switching between tools and devices as they shifted between tasks. Receivers rely on multiple, required third-party tools and devices."
           col: 3
+        
+
+
+        - material: "visibility_off"
+          header: Needed Visibility
+          text: "We heard from both Receivers and Store Managers that success was achieved through regular communication. Limited visibility into other store activities increases coordination effort."
+          col: 3
+        
+
+        - material: "assignment"
+          header: Unfamiliar with App
+          text: "We confirmed our assumption that Receivers recognized our application, but not all interacted with it. It was considered a 'Night Crew App,' not relevant to their work."
+          col: 3
+        
 
   - layout: split
     bg_color: "var(--porridge)"
@@ -181,11 +191,12 @@ segments:
       label: "Ideation"
       header: "What should we build?"
       body: >
-        <p>I conducted <mark>multiple workshop sessions with our team</mark>, first prioritizing areas of opportunity we had identified from discovery, then sketching early concepts. We evaluated ideas through group discussion and feature voting.</p>
-        <p>
-        Given the volume of ideas, we narrowed the work to two design concepts which we would test with users.</p>
-        <p>
-        Throughout the process, I owned the creation of the design concepts, files, and prototypes, defining the core UI and interactions as we continued to test and iterate.</p>
+
+        <p><mark>I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas.</mark> We narrowed a wide set of directions to two solutions for testing.</p>
+
+        <p>As design lead, I built the prototypes and defined the core interface and interactions through iterative testing and refinement. The final solutions gave Receivers a clear daily task view and a single access point for their tools, replaced paper processes with guided digital workflows, and improved visibility so the entire store could stay aligned.
+        </p>
+      body_color: var(--stratus)
     gallery:
         images:
             - src: "/images/dsd-prioritization.png"
@@ -200,19 +211,19 @@ segments:
 
 
   - layout: split
-    bg_color: "var(--oak)"
+    bg_color: "var(--porridge)"
     left:
       type: text
       label: "Testing & Iteration"
       header: "Is this the right solution?"
-      header_color: "var(--seafoam)"
+      header_color: "var(--earth)"
       body: >
-        We tested concepts with Receivers in stores, walking through the designs and asking targeted questions to assess usability, clarity, and perceived value. As the designs evolved, we continued to gather feedback at key stages while continuing to coordinate with our engineering team on technical feasibility.
-        </br></br>
-        Once the team and our partners felt confident in the solution, I presented the MVP and select future features in a virtual forum that invited managers of all the 2000+ stores.
-        </br></br> 
-        I handed off the designs to a UX designer, who aligned them to the design system and refined visual details to support a smooth transition to development.
-      body_color: "var(--seafoam)"
+        We tested concepts with in-store Receivers, walking through designs and asking targeted questions to evaluate value, priority, usability, and clarity. As the designs evolved, we gathered feedback at key stages and coordinated with engineering on technical feasibility.
+
+        <p>As a part of this effort, I presented the MVP and select future features in a virtual forum for managers across 2,000+ stores.</p>
+
+        <p>Since our junior designer and engineers were invited to sessions and regularly updated on research and testing findings, I was confident when handing off design files for pixel-perfect UI refinement and development. Notes with user-insights for features and quick links to artifacts within my Figma file, paired with open lines of communication, helped ensure the integrity of our designs and kept users at the through-line of decision-making. </p>
+      body_color: "var(--stratus)"
 
 
     right:
@@ -230,7 +241,7 @@ segments:
     left:
       type: image
       images:
-        - src: "images/fpo-phones.png"
+        - src: "images/dsd-phones.png"
           alt:
           caption:
           position: 
@@ -240,13 +251,13 @@ segments:
       header: "What changed because of this?"
       body: >
         <p>
-        Unlike past projects, my involvement on the team came to an end before the team had launched alpha or beta tests.</p>
+        Unlike past projects, my involvement came to an end before the team had developed and released a functioning prototype. </p>
         <p>
-        Discovery efforts, however, surfaced conversations about larger oganizational needs to support the success of the DSD Receiver role and what that might mean.
+        Discovery efforts, however, surfaced conversations about larger organizational needs and would inform a future roadmap beyond my contract.
         </p>
         <p>
-        Discussions also stirred a need among the team and larger organization to consider better defining the purpose and future trajectory of the application once colloquially referred to as the "Night Crew" application by stores to encompass all receiving activities.
+        Had I remained on the team, I'd be eager to measure adoption among Receivers and monitor any impact on unclaimed vendor credits relative to usage metrics. 
         </p>
-      header_color: "var(--electric)"
-      body_color: "var(--porridge)"
+      header_color: "var(--seafoam)"
+      body_color: "var(--nimbus)"
 ---
