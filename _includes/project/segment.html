@@ -33,7 +33,7 @@
 
     <!-- Text -->
       {% when "text" %}
-        <div class="segment-text" style="padding:2em;">
+        <div class="segment-text" >
           {% if include.segment.left.label %}
             <p class="segment-label label" style="color: {{ include.segment.left.header_color | default: 'inherit' }};">{{ include.segment.left.label }}</p>
           {% endif %}
@@ -60,7 +60,7 @@
     
     <!-- Cover -->
     {% when "cover" %}
-        <div class="segment-cover" style="background-image:url('{{ include.segment.right.src | relative_url }}'); background-size:cover; height:100%;">
+        <div class="segment-cover" style="background-image:url('{{ include.segment.right.src | relative_url }}');">
         </div>
 
     <!-- Multiple Images -->
@@ -71,9 +71,9 @@
                 style="
                     background-color: {{ callout.bg_color | default: 'transparent' }};">
                     <figure>
-                        <img class="responsive" src="{{ images.src | relative_url }}" alt="{{ images.alt | default: '' }}">
+                        <img class="responsive" src="{{ images.src | relative_url }}" alt="{{ images.alt | default: '' }}" title="{{ images.alt | default: '' }}">
                         {% if images.caption %}
-                        <figcaption>{{ images.caption }}</figcaption>
+                        <figcaption style="color: {{images.caption_color | default: $earth }}">{{ images.caption }}</figcaption>
                         {% endif %}
                     </figure>
 
@@ -112,7 +112,7 @@
 
     <!-- Text -->
     {% when "text" %}
-        <div class="segment-text" style="padding:2em;">
+        <div class="segment-text">
           {% if include.segment.right.label %}
             <p class="segment-label label" style="color: {{ include.segment.right.header_color | default: 'inherit' }};">{{ include.segment.right.label }}</p>
           {% endif %}
@@ -133,12 +133,14 @@
 {% if include.segment.gallery and include.segment.gallery.images %}
   <div class="segment-gallery row">
     {% for item in include.segment.gallery.images %}
-      <figure class="col-{{ item.col | default: 4 }}">
-        <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
-        {% if item.caption %}
-          <figcaption>{{ item.caption }}</figcaption>
-        {% endif %}
-      </figure>
+      <figure class="col-lg-{{ item.col | default: 4 }}">
+        <div>
+          <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
+        </div>
+            {% if item.caption %}
+              <figcaption>{{ item.caption }}</figcaption>
+            {% endif %}
+        </figure>
     {% endfor %}
   </div>
 {% endif %}
@@ -169,7 +171,7 @@
                 {% endif %}
 
                 {% if item.text %}
-                <p>{{ item.text }}</p>
+                <p style="color: {{ item.text_color | default: 'inherit' }};">{{ item.text }}</p>
                 {% endif %}
               </div>
               {% endfor %}

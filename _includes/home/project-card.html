@@ -1,4 +1,4 @@
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
   <a class="project__link" href="{{ include.link }}">
       <div class="project" style="background-color: {{ include.color }}">
         <div style="background-image: linear-gradient(to bottom, var(--porridge), {{ include.color }} );">
@@ -7,19 +7,11 @@
 
           <div class="project__content">
 
-            {% if include.tags %}
-              <ul class="project__tag">
-                {% for tag in include.tags %}
-                  <li class="project__tag">{{ tag }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
+
 
             <h3 class="project__title">{{ include.title }}</h3>
             <p class="project__client">{{include.client }}</p>
-            <p class="project__summary">
-              {{ include.summary | default: "test" }}
-            </p>
+
           </div>
         </div>
       </div>
@@ -31,4 +23,14 @@
 
       </div>
   </a>
+              {% if include.tags %}
+              <ul class="project__tag">
+                {% for tag in include.tags %}
+                  <li class="project__tag">{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+              <p class="project__summary">
+              {{ include.summary | default: "test" }}
+            </p>
 </div>

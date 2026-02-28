@@ -3,9 +3,21 @@
 <head>
   <meta charset="utf-8">
   {% include base-components/head.html %}
+  <script src="{{ '/assets/js/scroll-reveal.js' | relative_url }}"></script>
 </head>
 
 <body class="page page--{{ page.layout | default: 'default' }}">
+  <!--
+  HEY! Funny running into you here! I suppose you're the curious type,
+  but hope you provide grace to a life-long learner as you look around.
+
+  I hand-coded much of this site with the assistance of web resources,
+  A.I., and the Jekyll framework. This is not my personal strength,
+  but was a stretch goal. 
+  
+  So please forgive the absence of best-practices and technical debt
+  I accrued during discovery.
+-->
 {% include base-components/head.html %}
   {% include navigation.html %}
 
