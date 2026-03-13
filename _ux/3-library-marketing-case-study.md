@@ -20,10 +20,10 @@ hero:
     header_color: "var(--earth)"
     body: >
       <p>
-       Event programming is an essential service of a public library and Philadelphia’s Free Library hosts over 30,000 events a year.
+       Free Library of Philadelpiha organization serves a diverse population of 1.5 million people by providing a robust lending library, digital resources, and special collections - and over 30,000 events and programs a year. 
       </p>
       <p>
-        The Library’s two-person design team and a two-person in-house print team aid in the promotion of programs and events.
+      In FY 2018, the Design Studio helped promote 750+ programs a year, a far reach from teh 30,000+ that were held at branches across the city. The production process required staff to submit requests 2 months in advance.
       </p>
 
 
@@ -47,7 +47,100 @@ outline_methods:
 outline_medium: "Service Design"
 outline_bg_color: "var(--porridge)"
 
+
+
+
+
 segments:
+
+  - layout: split
+    bg_color: "var(--earth)"
+    right:
+      type: image
+      images:
+        - src: "images/flp-flier-process-old.png"
+          alt: Visualized flow 
+          caption: Truncated flow showing draft of flier to print
+          caption_color: "var(--nimbus)"
+        - src: "images/flp-fliers-before-component.png"
+          alt: 
+          caption: Components of Flier
+          caption_color: "var(--nimbus)"
+
+    left:
+      type: text
+      label: "Current State"
+      header: "What we knew"
+      body: >
+         <p>As the head of the department, I had intimate knowledge of the internal processes. Materials took two to three weeks to get processed, pass through a backlog of projects, one week for the approval process and edits, and another week for print production and delivery.
+         </p>
+         <p>Planning two months in advance was a real challenge for staff, who often created programming on an accelerated timeline.</p>
+         <p>As a result, staff often went without print material for promotion or created fliers that compromised brand integrity and accessibility to some audiences.</p>
+
+      header_color: "var(--seafoam)"
+      body_color: "var(--nimbus)"
+
+    icons:
+      sets:
+      - header: We cannot rely on digital promotions.
+        text: >
+          While social media promotion has long been considered an attractive option for organizations with limited budgets, Philadelphia is a city with a huge digital divide. Sources suggest that about 30% of Philadelphia households were without internet in 2017, making us an organization that relies heavily on print.
+        col: 4
+      
+      - header: Four people, 30,000+ events
+        text: >
+          The Free Library has an in-house Design Studio with two full-time designers and a Reprographics unit (akin to a Kinkos), with two full-time print-production staff. 
+        col: 4
+
+      - header: The Design Studio was a critical resource for the library system.
+        text: >
+          The Reprographics unit offered one of the few means of color printing for the organization. Through 2017, these teams largely existed to support event promotion, seeing teh flier production process through from ideation, design, and production. 
+        col: 4
+
+
+
+
+  - layout: split
+    bg_color: "var(--porridge)"
+    left:
+     col: 6
+     type: text
+     label: "Key Research Findings"
+     header: "How did research shape the design? "
+     body: >
+        We surveyed staff to understand how the materials we created were being used, what formats staff found to be most successful and why, in what other ways staff promoted their events, and what technical skills staff possessed.
+     header_color: "var(--oak)"
+    right:
+      col: 6
+      type: image
+      images:
+      - src: "images/flp-survey.png"
+        alt: 
+        caption: survey x-number of library staff
+
+    icons:
+        sets:
+        - material: "crop"
+          header: Smaller formats preferred
+          text: "Surveying confirmed our understanding of how formats were used, but gave insight into why. Limited display space made smaller formats prefereable."
+          col: 3
+
+        - material: "3p"
+          header: 91% of staff promoted on social
+          text: "While printed promotions were often emphasized by the city to ensure access to information, Libraries confirmed that they cross-promoted on social media."
+          col: 3
+
+        - material: "image"
+          header: Familiarity with many tools
+          text: "We knew to succeed, we'd need little barrier to access to any tool. Surveying staff we learned that they had familiarity or willingness to learn new tools."
+          col: 3
+        
+        - material: "savings"
+          header: No budget for new tools
+          text: "While tools such as Canva were popular, there was zero additional budget to devote to new tools and no bandwidth from the IT teams to support implementation."
+          col: 3
+
+
   - layout: split
     bg_color: "var(--nimbus)"
     left:
@@ -69,112 +162,86 @@ segments:
         </p>
      body_color: "var(--earth)"
 
-
-
-  - layout: split
-    bg_color: "var(--porridge)"
-    left:
-     col: 6
-     type: text
-     label: "Key Research Findings"
-     header: "How did research shape the design? "
-     body: >
-        Research revealed many variables among stores and how they operated as a result of their individual size, staff, and the kind of delivery, as examples.
-     header_color: "var(--oak)"
-    right:
-      col: 6
-      type: callout
-      callouts:
-      - header: "Support new user groups."
-        header_color: "var(--oak)"
-        text: "Receivers were already operating at capacity, so any added steps could risk failure"
-
-      - header: "Do not add time to the process."
-        header_color: "var(--oak)"
-        text: "Interviewees stressed the importance of timeliness in receiving a delivery. While we always look for time-saving opportunities, this case had many potential downstream effects."
-        
-      - header: "Remain flexible to varying styles of working."
-        header_color: "var(--oak)"
-        text: "Upstream data was tailored to use in environments before they reached the store. Additionally, error during any upstream process would impact what in-store users see on screen."
-    icons:
-        sets:
-        - material: "group"
-          text: "Many different roles may contribute to the unloading of a truck depending on the time of delivery or available staff."
-          col: 3
-
-        - material: "local_shipping"
-          text: "Drivers are on strict timelines, so the unloading process may need to occur quickly or in the absence of a driver."
-          col: 3
-
-        - material: "barcode_reader"
-          text: "Devices may be limited in stores, so not all teammates may have a unique device available to them while they are working."
-          col: 3
-        
-        - material: "category"
-          text: "Distribution Centers, Drivers, and Department Managers had different ways of categorizing product data."
-          col: 3
-
   - layout: split
     bg_color: "var(--porridge)"
     right:
       type: image
       images:
-        - src: "images/dsd-sketch.png"
+        - src: "images/flp-fliers-early-component.png"
+          alt: "Template 1.0 components"
+          caption: Initial concept, with no custom image
+        - src: "images/flp-flier-process-new.png"
           alt: A rough sketch of a screen with notes depicting a list of vendors and times
           caption: A sample sketch from one of our sessions. 
+
+
+
     left:
       type: text
-      label: "Design & Feedback"
-      header: "How might we refine?"
+      label: "Feedback & Design"
+      header: "What does an MVP look like?"
       body: >
         <p>
-        We refined the initial designs to support the fast, hands-on nature of unloading a trailer. While some roles needed detailed delivery information, others only needed to check in inventory quickly. The interface was intentionally focused on what was required in the moment, reducing distractions during physical work.
+        We developed an initial template solution and tested internally, then with our Coordinators,  before releaseing to all creators.</p>
+        <p>
+        Since the design team worked on Macs, we emulated staff PC work environments. We discovered staff could not install fonts due to restrictions on machines and our official brand fonts were also restricted from use in the forms which required pivoting to designs that made use of similar alternatives.
         </p>
         <p>
-        Information that previously lived across external sources was now centralized in the application for easy reference. Familiar artifacts informed the UI to help users orient quickly, with deeper details available on demand for those who needed them.</p>
-    gallery:
-        images:
-            - src: "/images/dsd-prioritization.png"
-              alt: "Vendor intake"
-              caption: Prioritization
-            - src: "/images/dsd-coworking.png"
-              alt: "Receiving workflow"
-              caption: Co-Design Workshop
-            - src: "/images/dsd-wireframe.png"
-              alt: "Vendor intake"
-              caption: Concept Sketches
+        Initial release reduced turnaround for print amteraisl from two months to roughly a week. Staff expressed they were greatly relieved, but further feedback still revealed that the text-only fliers did not offer the same apeal or value as fliers designed with images.
+        </p>
+
+  - layout: split
+    bg_color: "var(--porridge)"
+    left:
+      type: image
+      images:
+        - src: "images/flp-fliers-late-components.png"
+          alt: "Template 1.0 components"
+          caption: Initial concept, with no custom image
+        - src: "images/flp-asset-library.png"
+          alt: A rough sketch of a screen with notes depicting a list of vendors and times
+          caption: A sample sketch from one of our sessions. 
+
+    right:
+      type: text
+      label: "Design Iteration"
+      header: "How might we improve?"
+      body: >
+        <p>
+        We continued testing solutions that might allow custom images, but these were not reliable or user-friendly. In XXX, however, Adobe released a new feature that enabled image fields. 
+        </p>
+        <p>
+        Lessons from our initial release helped us further finesse our solution. We traded perfectly formatted address lines in static text for dropdowns and open text fields. This reduced the number of files the department and coordinators would need to maintain from 270 to 4.
+        </p>
 
 
   - layout: split
     bg_color: "var(--earth)"
     left:
-      col: 4
+      col: 6
       type: image
       images:
-        - src: "images/fpo-phones.png"
+        - src: "images/flp-template-sample.png"
           alt:
           caption:
           position: 
+        - src: "images/flp-more-templates.png"
+
     right:
-      col: 8
+      col: 6
       type: text
       label: "Results & Achievements"
       header: "What changed because of this?"
       body: >
         <p>
-        Our delivery-scanning solution was widely adopted in stores, surpassing forecasts with 90% enterprise-wide adoption, and earning praise from managers for its ease of use and quick onboarding (which is my personal favorite note).
+        Our templating efforts have evolved and continue to take new forms. We now develop and distribute one custom asset for a systemwide program rather than hundreds of unique flyers.
         </p>
-        <ul>
-        <li>
-        Adoption was so strong that distribution centers noticed an increase in reported discrepancies, highlighting opportunities for improvement.
-        </li>
-        <li>
-        Guided by insights from interviews and process mapping, I advocated for future features that minimized burden on in-store associates and aligned with real workflows.
-        </li>
-        <li>
-        These initial efforts laid the foundation for digital enhancements that could improve data accuracy, support adjacent applications, and start to generate metrics to inform broader loss prevention initiatives.
-        </li>
-        </ul>
-      header_color: "var(--golden)"
-      body_color: "var(--porridge)"
+        <p>
+        The method used to create flier templates has been applied to other print material and signs for libraries, empowering librarians to accommodate patron signage needs quickly and to bring awareness to meaningful events in their spaces.
+        </p>
+        <p>
+        In one month, the department produced 130 templated fliers, supplying about 6 programs with printed material a day. Our Print Production team who had previously seen many of their projects being outsourced now has had their volume of work nearly double.
+        </p> 
+      header_color: "var(--seafoam)"
+      body_color: "var(--nimbus)"
 ---

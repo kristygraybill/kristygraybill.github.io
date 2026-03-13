@@ -30,9 +30,7 @@ hero:
 outline_role:
   title: "UX Design Lead"
   description: >
-    While proto-personas and historical insights existed, the workflows behind inventory receiving were not clearly mapped or documented.
-    </br></br>
-    My focus was to map the end-to-end receiving and backroom processes across real store environments to inform design decisions and future enhancements
+    The prior team had notable tribal knowlege of the user's day-to-day, but as My focus was to map the end-to-end receiving and backroom processes across real store environments to inform design decisions and future enhancements
 
 outline_collaborators:
   - Product Manager
@@ -67,7 +65,7 @@ segments:
         <p>
         Through this process, we clearly noted that many varying roles impact the receipt of inventory and would potentially need to interact with the application. As a result, addressing this problem space would begin to redefine the purpose of the app and evolve early concept designs.
         </p>
-     body_color: "var(--porridge)"
+     body_color: "var(--nimbus)"
     gallery:
       images:
         - src: "images/MD-Process.png"
