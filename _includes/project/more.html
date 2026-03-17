@@ -1,0 +1,34 @@
+<div class="more">
+<!-- Left CTA -->
+    <div>
+        <p>Want to learn more about this project?</p>
+        <p style="font-size:smaller">Contact me:<br>
+            kristy.graybill @ gmail.com </p>
+    </div>
+
+
+
+<!-- Right Nav -->    
+    <div>
+         {% assign current_collection = page.collection %}
+            {% assign projects = site[current_collection] %}
+
+            {% if page.next %}
+            {% assign target_project = page.next %}
+            {% else %}
+            {% assign target_project = projects.first %}
+            {% endif %}
+
+            <div class="next-project-footer" style="
+                text-align:right;
+                text-decoration:none;
+                color: var(--electric);
+                ">
+            <a href="{{ target_project.url | relative_url }}" class="next-card" rel="next">
+                <div class="next-label">Next Project</div>
+                <div class="next-title">{{ target_project.title }}</div>
+                <i class="mi material-icons">arrow_forward</i> 
+            </a>
+            </div>
+    </div>
+</div>

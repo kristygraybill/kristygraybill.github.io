@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<div class="project-page project-ux">
+
+  <!-- Hero section -->
+  {% include project/segment.html segment=page.hero %}
+
+  <!-- Contributors / team section -->
+  {% include project/contributors.html
+      role=page.outline_role
+      collaborators=page.outline_collaborators
+      methods=page.outline_methods
+      medium=page.outline_medium
+      bg_color=page.outline_bg_color
+  %}
+
+  <!-- Any number of additional segments -->
+  {% for segment in page.segments %}
+    {% include project/segment.html segment=segment %}
+  {% endfor %}
+
+  <!-- Any number of additional segments -->
+  
+   {% include project/more.html %}
+
+
+</div>
+

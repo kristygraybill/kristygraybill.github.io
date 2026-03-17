@@ -1,0 +1,75 @@
+title: The G is for Graybill
+email: your-email@example.com
+description: >-
+  Portfolio of UX, Motion, and Graphic Design work
+twitter_username: jekyllrb
+github_username: jekyll
+permalink: /projects/:title
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+domain: kristygraybill.github.io
+url: https://kristygrayibll.github.io
+baseurl: ""
+
+collections:
+  ux:
+    output: true
+    permalink: /ux/:name/
+  motion:
+    output: true
+    permalink: /motion/:name/
+  graphic:
+    output: true
+    permalink: /graphic/:name/
+  personal:
+    output: true
+    permalink: /personal/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: ux
+    values:
+      layout: project-ux
+
+  - scope:
+      path: ""
+      type: motion
+    values:
+      layout: project-motion
+
+  - scope:
+      path: ""
+      type: graphic
+    values:
+      layout: project-graphic
+
+  - scope:
+      path: ""
+      type: personal
+    values:
+      layout: personal
+
+section_themes:
+  light:
+    bg: "#ffffff"
+    text: "#111111"
+  dark:
+    bg: "#111111"
+    text: "#ffffff"
+  neutral:
+    bg: "#f5f5f5"
+    text: "#222222"
+
+nav:
+  - label: UX
+    url: /ux/
+  - label: Motion
+    url: /motion/
+  - label: Graphic
+    url: /graphic/
+  - label: Personal
+    url: /personal/

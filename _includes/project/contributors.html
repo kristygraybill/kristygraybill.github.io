@@ -1,0 +1,40 @@
+<div class="contributors" style="background-color: {{ include.bg_color | default: '#fff' }}">
+
+  {% if include.role %}
+    <div class="contributors__block contributors__role role">
+      <h2>My Role</h2>
+      <h3 class="contributors__title">{{ include.role.title }}</h3>
+      <p class="contributors__description">{{ include.role.description }}</p>
+    </div>
+  {% endif %}
+
+  {% if include.collaborators %}
+    <div class="contributors__block contributors__collaborators">
+      <h2 class="contributors__label">Collaborators</h2>
+      <ul>
+        {% for item in include.collaborators %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if include.methods %}
+    <div class="contributors__block contributors__methods">
+      <h2 class="contributors__label">Methods</h2>
+      <ul>
+        {% for item in include.methods %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if include.medium %}
+    <div class="contributors__block contributors__medium">
+      <h2 class="contributors__label">Platform</h2>
+      <p>{{ include.medium }}</p>
+    </div>
+  {% endif %}
+
+</div>
