@@ -3,7 +3,7 @@ layout: project-ux
 title: "UX Advocacy"
 client: "Free Library of Philadelphia"
 tags: [UX/UI, UX Advocacy]
-image: "images/FLP-RBD-w.png"
+image: "images/flp-rbd-w.png"
 id: myday
 summary: "Architecting discovery systems to provide access to archival collections"
 color: "var(--party)"
@@ -13,7 +13,7 @@ hero:
   bg_color: white
   left:
     type: cover
-    src: "images/FLP-RBD-w.png"
+    src: "images/flp-rbd-w.png"
   right:
     type: text
     header: "How can we design a user-friendly tool for special collections?"

@@ -3,7 +3,7 @@ layout: project-ux
 title: "Institutional Service Design"
 client: "Free Library of Philadelphia"
 tags: [Service Design]
-image: "images/FLP-comms-w.png"
+image: "images/flp-comms-w.png"
 id: myday
 summary: "Bridging public user needs and internal workflows to strengthen institutional communication."
 color: "#b8b017"
@@ -13,7 +13,7 @@ hero:
   bg_color: white
   left:
     type: cover
-    src: "images/FLP-comms-w.png"
+    src: "images/flp-comms-w.png"
   right:
     type: text
     header: "How can a small, in-house design team make a greater impact on event promotion?"

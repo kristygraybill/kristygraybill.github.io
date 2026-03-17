@@ -3,7 +3,7 @@ layout: project-ux
 title: "Decision Support"
 client: "Kroger - Grocery Retailer"
 tags: [Revenue Recovery]
-image: "/images/DSD-vendor-w.png"
+image: "/images/dsd-vendor-w.png"
 id: DSD
 summary: "Establishing a centralized hub for vendor oversight and store-level decision support."
 color: "var(--seafoam)"
@@ -16,7 +16,7 @@ hero:
   bg_color: "#FFFFFF"
   left:
     type: cover
-    src: "images/DSD-vendor-w.png"
+    src: "images/dsd-vendor-w.png"
     col: 5
   right:
     type: text
