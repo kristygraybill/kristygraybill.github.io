@@ -167,7 +167,7 @@ segments:
       body: >
         <ul>
         <li>
-        The delivery-scanning solution <mark>surpassed forecasts with 90% enterprise-wide adoption</mark> and positive feedback from managers on its ease of use and fast onboarding.
+        The delivery-scanning solution surpassed forecasts with 90% enterprise-wide adoption and positive feedback from managers on its ease of use and fast onboarding.
         </li>
         <li>
         High adoption also surfaced an increase in reported discrepancies at distribution centers, exposing opportunities to improve the process. Drawing on interviews and process mapping, I championed future features that minimized associate burden and aligned with real workflows.

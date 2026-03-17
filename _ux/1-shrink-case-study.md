@@ -25,7 +25,7 @@ hero:
     label: Problem + Opportunity
     body: >
         <p>
-        Our team managed a task application for warehouse inventory, but workflows for products delivered directly by vendors existed entirely outside the system. Enterprise data showed that <mark>stores were losing millions in revenue because damaged or expired goods weren't being reported for credit</mark> This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
+        Our team managed a task application for warehouse inventory, but workflows for products delivered directly by vendors existed entirely outside the system. Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
         </p>
     body_color: "var(--earth)"
     col: 7
@@ -99,7 +99,7 @@ segments:
      label: "Discovery Research"
      header: "What do tasks look like in practice?"
      body: >
-      <p> I led the planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets.And, to help ground my understanding, I participated in several in-store interviews. </p> <p><mark>I translated these findings into maps that showed where the work was breaking down and how different roles and tools interacted. </mark> Additionally, I compiled proto-personas from our conversations to help remind the team of real-world challenges, mental models, and different kinds of Receivers might have different needs. </p> 
+      <p> I led the planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets.And, to help ground my understanding, I participated in several in-store interviews. </p> <p>I translated these findings into maps that showed where the work was breaking down and how different roles and tools interacted. Additionally, I compiled proto-personas from our conversations to help remind the team of real-world challenges, mental models, and different kinds of Receivers might have different needs. </p> 
     right:
       col: 4
       type: callout
@@ -192,7 +192,7 @@ segments:
       header: "What should we build?"
       body: >
 
-        <p><mark>I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas.</mark> We narrowed a wide set of directions to two solutions for testing.</p>
+        <p>I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas. We narrowed a wide set of directions to two solutions for testing.</p>
 
         <p>As design lead, I built the prototypes and defined the core interface and interactions through iterative testing and refinement. The final solutions gave Receivers a clear daily task view and a single access point for their tools, replaced paper processes with guided digital workflows, and improved visibility so the entire store could stay aligned.
         </p>
