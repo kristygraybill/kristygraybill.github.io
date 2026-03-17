@@ -19,7 +19,8 @@ $seafoam: #aad6b5;
 /*$party: #F66A55 ;*/
 $party: #f79283;
 $electric: #85c7c7;
-$earth: #3a3937;
+$earth: #303531;
+$moon: #3a3937; 
 $stratus: #837d7d;
 $nimbus: #ccd4d2;
 $porridge: #F5F5F5;
@@ -63,20 +64,47 @@ a {
   text-decoration: none;
 }
 
-
 button {
-    font-size: 1.6em;
-    background-color: transparent;
-    border: solid 1px var(--porridge);
-    border-radius: 18px;
-    padding: 1em;
-    color: var(--porridge);
-    font-family: 'FIra Sans';
-    font-weight: 400;
-    letter-spacing: .03em;
-    cursor: pointer;
+  /* ... Keep your existing font, padding, and border styles ... */
+  font-size: 1.4em;
+  font-family: 'Fira Sans', sans-serif;
+  cursor: pointer;
+  border: 2px solid var(--seafoam);
+  border-radius: 2em;
+  padding: 1em 1.4em;
+  display: flex;
+  align-items: center;
+  margin: 2em;
+
+  /* 1. Define the 45-degree "Double Width" Gradient */
+  /* We make it 300% wide so the transition feels smooth and angled */
+  background: linear-gradient(45deg, var(--seafoam) 50%, transparent 50%);
+  background-size: 300%;
+  background-position: 100%; /* Start on the transparent side */
+  color: var(--porridge);
+  
+  /* 3. Transition both properties */
+  transition:
+    background-position 0.6s ease-in-out,
+    color 0.3s ease,
+    transform 0.6s ease-in-out;
+
+  .material-icons {
+    margin-left: .8em;
+  }
 }
 
+button:hover {
+    background-position: 0%;
+    color: var(--earth); 
+    font-weight:500;
+    transform: scale(1.08);
+}
+
+/* Ensure the icon also changes color if it's a child */
+button:hover .material-icons {
+  color: var(--earth);
+}
 
 /* -------------------------
   Custom CSS
@@ -340,10 +368,9 @@ $max-width: 1200px;
     justify-content: center;
     border-radius: 50px; 
     background-color: $tokyo; 
-    padding: 4px 16px;
     overflow: hidden; 
-    width: 560px; // Desktop width
-    height: auto;
+    width: 472px; // Desktop width
+    height: 52px;
     
     transition: 
       border-radius 0.6s ease-in-out,
@@ -596,6 +623,15 @@ div.segment-left > div:first-child {
        padding:2em;
        }
 
+
+.project-ux {
+  .segment-right {
+      img{
+       border: dotted 2px var(--nimbus);
+      }
+  }
+}
+
 .segment-right {
     display:flex;
     flex-direction: column;
@@ -605,7 +641,6 @@ div.segment-left > div:first-child {
   img {
     border-radius: 16px;
     padding: 1em;
-    border: dotted 2px var(--seafoam);
   }
 
   }
@@ -807,11 +842,11 @@ div.segment-right > div:first-child {
 
         h3 {
           font-family: $font-family-alt;
-          margin: 8px 0em;
+          margin: 1.3em .4em;
           font-weight: 600;
           line-height: 1.12em;
-          color: $tokyo;
-          font-size: 1.3em;
+          color: $earth;
+          font-size: 1.5em;
         }
       }
 
@@ -856,9 +891,9 @@ div.segment-right > div:first-child {
      font-family: $font-family-alt;
     font-size: 1em;
     letter-spacing: .00em;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
-    opacity: .9;
+    opacity: 1;
     color: $tokyo;
       }
 
@@ -894,7 +929,7 @@ div.segment-right > div:first-child {
 
 
 .dek {
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-family: $font-family-sans;
       line-height: 1.6em;
       font-weight: 300;
@@ -909,7 +944,7 @@ div.segment-right > div:first-child {
   h1.is-visible .reveal-wrapper {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 0.0s;
+    transition-delay: 0.3s;
     padding: 8px 0px;
   }
 
@@ -917,7 +952,7 @@ div.segment-right > div:first-child {
   h2.is-visible .reveal-wrapper {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 0.3s; /* Delay it slightly */
+    transition-delay: 0.0s; /* Delay it slightly */
     padding: 8px 0px;
   }
 
@@ -1016,7 +1051,7 @@ div.segment-right > div:first-child {
 /* GRAPHIC HOME */
 .graphic {
   /*background-image: linear-gradient(0, var(--tokyo), var(--tokyo), var(--earth));*/
-  background-color: var(--earth);
+  background-color: var(--tokyo);
   display:flex;
 
     .row {
@@ -1161,7 +1196,7 @@ div.segment-right > div:first-child {
 /* MOTION HOME */
 
 #Motion {
-  background-color: var(--tokyo);
+  background-color: var(--earth);
 }
 
 
@@ -1169,7 +1204,7 @@ div.segment-right > div:first-child {
   display:flex;
   flex-direction:row;
 /*  background-image: linear-gradient(0, var(--earth), var(--earth), var(--earth), var(--stratus));*/
-  background-color: var(--tokyo);
+  background-color: var(--earth);
   position: relative;
   padding-bottom: 140px;
   text-align: center;

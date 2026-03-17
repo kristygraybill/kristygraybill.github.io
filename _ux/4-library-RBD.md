@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "Information Architecture"
+title: "UX Advocacy"
 client: "Free Library of Philadelphia"
 tags: [UX/UI, UX Advocacy]
 image: "images/FLP-RBD-w.png"

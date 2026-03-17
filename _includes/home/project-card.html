@@ -6,12 +6,7 @@
         <div class="descriptions">
 
           <div class="project__content">
-
-
-
             <h3 class="project__title">{{ include.title }}</h3>
-            <p class="project__client">{{include.client }}</p>
-
           </div>
         </div>
       </div>
@@ -30,7 +25,9 @@
                 {% endfor %}
               </ul>
             {% endif %}
-              <p class="project__summary">
-              {{ include.summary | default: "test" }}
-            </p>
+              <div class="project__summary">    
+                <p class="project__client">{{include.client }}</p>
+                <p class="">
+                {{ include.summary | default: "test" }}
+              </div>
 </div>

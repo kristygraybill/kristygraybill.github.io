@@ -41,17 +41,7 @@ segments:
           caption:
 
 
-    right:
-      type: image
-      images:
-        - src: "images/SCEE-closeup.png"
-          alt:
-          caption: "A suite of icon sets accompanied each pillar of the non-profit, their simplicity mirroring the silhouettes found in their logo."
-          caption_color: var(--nimbus)
-        - src: "images/SCEE-Enchanted-Forest-table-top-facts.png"
-          alt: 
-          caption: "Elements were applied to a basic suite of templates that allowed general staff to control and easily update content. The photos below show use of these templates, populated with facts by staff"
-          caption_color: var(--nimbus)
+
 
 
 ---
