@@ -30,7 +30,7 @@ hero:
 outline_role:
   title: "UX Design Lead"
   description: >
-    The prior team had notable tribal knowlege of the user's day-to-day, but as My focus was to map the end-to-end receiving and backroom processes across real store environments to inform design decisions and future enhancements
+    Thoroughly understand the day-to-day of our users and others impacted by related processes and lead both design, testing, and future research to inform decisions and future enhancements.
 
 outline_collaborators:
   - Product Manager
