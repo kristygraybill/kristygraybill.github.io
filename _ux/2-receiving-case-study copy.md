@@ -155,7 +155,7 @@ segments:
       col: 6
       type: image
       images:
-        - src: "images/fpo-phones.png"
+        - src: "images/md-screen-sample.png"
           alt:
           caption:
           position: 
