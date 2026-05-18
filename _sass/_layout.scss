@@ -385,12 +385,12 @@ $max-width: 1200px;
     }
 
     .nav-item {
-      font-size: .9em;
+      font-size: .75em;
       line-height: .8em;
       font-weight: 400;
-      letter-spacing:.74em;
+      letter-spacing:.074em;
       text-transform:uppercase;
-      font-family: $font-family-sans
+      font-family: $font-family-serif;
     }
   }
 }
