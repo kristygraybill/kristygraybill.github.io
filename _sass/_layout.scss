@@ -335,7 +335,6 @@ $max-width: 1200px;
   // Global Link States (LVHA Order)
   a {
     text-decoration: none;
-    font-weight: 500;
     transition: color 0.3s ease;
     
     &:link { color: $porridge; }
@@ -386,8 +385,12 @@ $max-width: 1200px;
     }
 
     .nav-item {
-      font-size: .8em;
+      font-size: .9em;
       line-height: .8em;
+      font-weight: 400;
+      letter-spacing:.74em;
+      text-transform:uppercase;
+      font-family: $font-family-sans
     }
   }
 }
