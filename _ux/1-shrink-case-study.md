@@ -25,7 +25,7 @@ hero:
     label: Problem + Opportunity
     body: >
         <p>
-        Our team managed a task application for warehouse inventory, but workflows for products delivered directly by vendors existed entirely outside the system. Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
+        Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit. This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
         </p>
     body_color: "var(--earth)"
     col: 7
