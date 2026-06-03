@@ -5,7 +5,9 @@ layout: base
 <div class="project-page project-ux">
 
   <!-- Hero section -->
-  {% include project/segment.html segment=page.hero %}
+    <div class="hero-fullwidth-container" style="background-color: {{ page.hero.bg_color | default: '#ffffff' }}; width: 100%;">
+    {% include project/hero.html hero=page.hero %}
+    </div>
 
   <!-- Contributors / team section -->
   {% include project/contributors.html

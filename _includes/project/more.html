@@ -1,34 +1,46 @@
 <div class="more">
-<!-- Left CTA -->
     <div>
         <p>Want to learn more about this project?</p>
         <p style="font-size:smaller">Contact me:<br>
             kristy.graybill @ gmail.com </p>
     </div>
 
-
-
-<!-- Right Nav -->    
     <div>
-         {% assign current_collection = page.collection %}
-            {% assign projects = site[current_collection] %}
+        {% assign current_collection = page.collection %}
+        {% assign projects = site[current_collection] %}
 
-            {% if page.next %}
-            {% assign target_project = page.next %}
-            {% else %}
-            {% assign target_project = projects.first %}
-            {% endif %}
+        {% if page.next %}
+            {% assign next_project = page.next %}
+        {% else %}
+            {% assign next_project = projects.first %}
+        {% endif %}
 
-            <div class="next-project-footer" style="
-                text-align:right;
-                text-decoration:none;
-                color: var(--electric);
-                ">
-            <a href="{{ target_project.url | relative_url }}" class="next-card" rel="next">
+        {% if page.previous %}
+            {% assign prev_project = page.previous %}
+        {% else %}
+            {% assign prev_project = projects.last %}
+        {% endif %}
+
+        <div class="next-project-footer" style="
+            text-align:right;
+            text-decoration:none;
+            color: var(--electric);
+            display: flex; /* Added to help align them side-by-side if desired */
+            justify-content: flex-end;
+            gap: 60px;
+            ">
+
+            <a href="{{ prev_project.url | relative_url }}" class="prev-card" rel="prev" style="text-align: left;">
+                <div class="next-label">Previous Project</div>
+                <div class="next-title">{{ prev_project.title }}</div>
+                <i class="mi material-icons">arrow_back</i> 
+            </a>
+
+            <a href="{{ next_project.url | relative_url }}" class="next-card" rel="next" style="text-align: right;">
                 <div class="next-label">Next Project</div>
-                <div class="next-title">{{ target_project.title }}</div>
+                <div class="next-title">{{ next_project.title }}</div>
                 <i class="mi material-icons">arrow_forward</i> 
             </a>
-            </div>
+        </div>
     </div>
 </div>

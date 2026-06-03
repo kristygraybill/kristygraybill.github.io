@@ -1,0 +1,49 @@
+{% assign hero = include.hero %}
+
+{% if hero %}
+<div>
+    <div class="row" style="padding: 0">
+
+      <div class="hero-cover col-lg-{{ hero.left.col | default: 5 }} col-md-12" style="background-image: url('{{ hero.left.src | default: hero.right.src | relative_url }}'); background-repeat:no-repeat; background-color: {{ hero.color | default: page.color }};">
+        {% if hero.left.type == "text" %}
+          <div class="hero-text-block">
+            {% if hero.left.label %}
+              <p class="segment-label" style="color: {{ hero.left.header_color | default: 'inherit' }};">
+                {{ hero.left.label }}
+              </p>
+            {% endif %}
+            {% if hero.left.header %}
+              <h2 class="segment-header" style="color: {{ hero.left.header_color | default: 'inherit' }};">
+                {{ hero.left.header }}
+              </h2>
+            {% endif %}
+            <div class="segment-body" style="color: {{ hero.left.body_color | default: 'inherit' }};">
+              {{ hero.left.body }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-lg-{{ hero.right.col | default: 7 }} col-md-11">
+        {% if hero.right.type == "text" %}
+          <div class="hero-text-block">
+            {% if hero.right.label %}
+              <p class="segment-label label" style="color: {{ hero.right.header_color | default: 'inherit' }};">
+                {{ hero.right.label }}
+              </p>
+            {% endif %}
+            {% if hero.right.header %}
+              <h1 class="segment-header header" style="color: {{ hero.right.header_color | default: 'inherit' }};">
+                {{ hero.right.header }}
+              </h1>
+            {% endif %}
+            <div class="segment-body" style="color: {{ hero.right.body_color | default: 'inherit' }};">
+              {{ hero.right.body }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+</div>
+{% endif %}
