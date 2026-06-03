@@ -55,8 +55,8 @@ segments:
     left:
      col: 10
      type: text
-     label: "Stakeholder & User Mapping"
-     header: "Who are impacted by or invested in inaccurate deliveries?"
+     label: "Process"
+     header: "Research & Discovery"
      header_color: "var(--seafoam)"
      body: >
         <p>
@@ -69,57 +69,47 @@ segments:
     gallery:
       images:
         - src: "images/MD-Process.png"
-          alt: 
-          col: 6
+          alt: "User Mapping"
+          col: 5
           caption: "Stakeholder Mapping"
         - src: "images/MD-painpoints.png"
-          col: 6
-          alt: 
+          col: 5
+          alt: "User Map"
           caption: "User Mapping"
 
 
   - layout: split
-    bg_color: white
+    bg_color: var(--earth)
     left:
-     col: 6
+     col: 10
      type: text
      label: "Key Research Findings"
      header: "How did research shape the design? "
      body: >
         Research revealed many variables among stores and how they operated as a result of their individual size, staff, and the kind of delivery, as examples.
-     header_color: "var(--oak)"
-    right:
-      col: 6
-      type: callout
-      callouts:
-      - header: Our solution should...
-        sub: >
-          <ul>
-          <li>support new user groups.</li>
-          <li>not add time to the process.</li>
-          <li>remain flexible to varying styles of working.</li>
-          <li>reflect the categorizations of the user</li>
-          </ul>
+     body_color: "var(--nimbus)"
+     header_color: "var(--seafoam)"
 
     icons:
+        text_color: "var(--nimbus)"    
         sets:
         - material: "group"
-          header: Many New Users
+          header: Support New User Groups.
           text: "Many different roles may contribute to the unloading of a truck depending on the time of delivery or available staff."
           col: 3
 
         - material: "local_shipping"
-          header: Timeline Restrictions
+          header: Do Not Add Time to the Process
           text: "Drivers are on strict timelines, so the unloading process may need to occur quickly or in the absence of a driver."
           col: 3
 
         - material: "barcode_reader"
-          header: Limited Devices
+          header: Remain Flexible to Varying Styles of Working
           text: "Devices may be limited in stores, so not all teammates may have a unique device available to them while they are working."
           col: 3
         
         - material: "category"
-          header: Differing Vocabulary
+          header: Use Common Vocabulary
           text: "Distribution Centers, Drivers, and Department Managers each had different ways of categorizing product data and labeling products."
           col: 3
 
@@ -138,8 +128,8 @@ segments:
 
     left:
       type: text
-      label: "Design & Feedback"
-      header: "How might we refine?"
+      label: "Process"
+      header: "Design & Feedback"
       body: >
         <p>
         We refined the initial designs to support the fast, hands-on nature of unloading a trailer. While some roles needed detailed delivery information, others only needed to check in inventory quickly. The interface was intentionally focused on what was required in the moment, reducing distractions during physical work.

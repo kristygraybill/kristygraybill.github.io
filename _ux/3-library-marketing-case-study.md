@@ -30,9 +30,7 @@ hero:
 outline_role:
   title: "Co-lead, Design"
   description: >
-    <p>
-    Collaborating closely with another co-leader, ***
-    </p>
+    As Co-lead of the department, I established key performance indicators for the department, developed a close working relationship with stakeholders, developed feedback channels including surveys, and assisted with technical research and implementation. 
 
 outline_collaborators:
   - Co-Leader, Design Studio
@@ -69,8 +67,8 @@ segments:
 
     left:
       type: text
-      label: "Current State"
-      header: "What we knew"
+      label: "Process"
+      header: "Current State"
       body: >
          <p>As the head of the department, I had intimate knowledge of the internal processes. Materials took two to three weeks to get processed, pass through a backlog of projects, one week for the approval process and edits, and another week for print production and delivery.
          </p>
@@ -81,6 +79,7 @@ segments:
       body_color: "var(--nimbus)"
 
     icons:
+      text_color: "var(--nimbus)"
       sets:
       - header: We cannot rely on digital promotions.
         text: >
@@ -103,7 +102,7 @@ segments:
   - layout: split
     bg_color: "var(--porridge)"
     left:
-     col: 6
+     col: 5
      type: text
      label: "Key Research Findings"
      header: "How did research shape the design? "
@@ -111,7 +110,7 @@ segments:
         We surveyed staff to understand how the materials we created were being used, what formats staff found to be most successful and why, in what other ways staff promoted their events, and what technical skills staff possessed.
      header_color: "var(--oak)"
     right:
-      col: 6
+      col: 5
       type: image
       images:
       - src: "images/flp-survey.png"
@@ -178,8 +177,8 @@ segments:
 
     left:
       type: text
-      label: "Feedback & Design"
-      header: "What does an MVP look like?"
+      label: "Process"
+      header: "Feedback & Design"
       body: >
         <p>
         We developed an initial template solution and tested internally, then with our Coordinators,  before releaseing to all creators.</p>

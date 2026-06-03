@@ -30,12 +30,9 @@ hero:
 outline_role:
   title: "UX/UI Designer"
   description: >
-    <p>
     Working closely with our subject matter experts and in-house Special Collection partners, I led efforts to better align public web pages to user needs. 
-    </p>
-    <p>
+
     As the first dedicated UX/UI designer at the Library in many years, my perpetual goal with every project was to improve the UX maturity of the organization. 
-    </p>
 
 outline_methods:
   - Data collation and analysis
@@ -64,7 +61,7 @@ segments:
      header_color: "var(--nimbus)"
      body: >
         <p>
-        In a 40-minute discussion, I engaged the Special Collections team, <mark>asking them to tell me about their experiences engaging with visitors and fielding help desk inquiries.</mark> What were their common questions? How did they initiate contact? What were they hoping to achieve? What challenges did they face when serving their audiences, if any? 
+        In a 40-minute discussion, I engaged the Special Collections team, asking them to tell me about their experiences engaging with visitors and fielding help desk inquiries. What were their common questions? How did they initiate contact? What were they hoping to achieve? What challenges did they face when serving their audiences, if any? 
         </p>
         <p>
         From our conversation, we identified two primary audiences: <strong>Researchers and Recreational Visitors</strong>
@@ -133,6 +130,7 @@ segments:
           </ul>
 
     icons:
+        text_color: "var(--nimbus)"
         sets:
         - material: "calendar_month"
           text: "Casual visitors were less likely to plan their visit than researchers or educators."

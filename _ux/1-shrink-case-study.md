@@ -2,7 +2,7 @@
 layout: project-ux
 title: "Decision Support"
 client: "Kroger - Grocery Retailer"
-tags: [Revenue Recovery]
+tags: [End-to-End]
 image: "/images/dsd-vendor-w.png"
 id: DSD
 summary: "Establishing a centralized hub for vendor oversight and store-level decision support."
@@ -25,14 +25,16 @@ hero:
     label: Problem + Opportunity
     body: >
         <p>
-        Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit. This revealed a clear opportunity to extend the product into these workflows, surfacing the information needed to drive revenue recovery and strengthen compliance at both the store and enterprise levels.
+        Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit.
+        </p>
+        <p>This revealed a clear opportunity to extend the product into these workflows and to better understand how we might drive revenue recovery and strengthen compliance at both the store and enterprise levels.
         </p>
     body_color: "var(--earth)"
     col: 7
 
 outline_role:
   title: "UX Design Lead"
-  description: "I led end-to-end research and design for a new feature that would bring a new extension of our application to a first-time user audience across 2,000+ nationwide stores. As UX Design Lead, I owned the design vision and research strategy, translating insights into design decisions."
+  description: "I led end-to-end research and design for a new feature that would extend our application to a first-time user audience across 2,000+ nationwide stores. As UX Design Lead, I owned the design vision and research strategy, translating insights into design decisions."
 
 outline_collaborators:
   - Product Manager
@@ -53,38 +55,36 @@ outline_bg_color: "var(--porridge)"
 segments:
   - layout: split
     bg_color: "var(--earth)"
+
     right:
-      type: image
-      images:
-        - src: "images/dsd-backroom-sample.png"
-          alt: backroom with many pallets of bottled drinks from vendors
-          caption: Sample of back room stock 
-          caption_color: "var(--nimbus)"
-    left:
+      col: 12
       type: text
-      label: "Current State"
-      header: "What we knew"
+      label: "Process"
+      header: "Current State"
       body: >
          <p>I conducted a series of discovery sessions with stakeholders and cross-functional design teams, documenting insights on a central digital whiteboard. This effort streamlined our focus on shrink, clarified user-centered design challenges, and synchronized our roadmap with adjacent initiatives.</p> 
 
-      header_color: "var(--seafoam)"
+      header_color: "var(--nimbus)"
       body_color: "var(--nimbus)"
 
     icons:
+      text_color: "var(--nimbus)"
+      shadow: false
       sets:
-      - header: Focusing Our Goal
+      - material: "my_location"
+        header: Focusing Our Goal
         text: >
           We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product. We understood that the Receiver had many responsibilities beyond this, but we'd need to focus results in this space.
         col: 4
       
-      - header: Known Challenges
+      - material: "group_add"
+        header: Known Challenges
         text: >
           Our existing application was tailored to work related to receiving distribution center product. Receivers' work rarely intersected with this, if at all. We'd need to develop for a net new user who was equipped with separate, third-party tools that they used to receive product.
         col: 4
 
-
-
-      - header: Strategic Partnerships
+      - material: "handshake"
+        header: Strategic Partnerships
         text: >
          A separate team was working with a vendor to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their current and future development and their limitations.
         col: 4
@@ -92,29 +92,15 @@ segments:
 
 
   - layout: split
-    bg_color: "var(--porridge)"
+    bg_color: white
     left:
-     col: 8
+     col: 11
      type: text
-     label: "Discovery Research"
-     header: "What do tasks look like in practice?"
+     label: "Process"
+     header: "Discovery Research"
      body: >
-      <p> I led the planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets.And, to help ground my understanding, I participated in several in-store interviews. </p> <p>I translated these findings into maps that showed where the work was breaking down and how different roles and tools interacted. Additionally, I compiled proto-personas from our conversations to help remind the team of real-world challenges, mental models, and different kinds of Receivers might have different needs. </p> 
-    right:
-      col: 4
-      type: callout
-      callouts:
-      - sub: "What factors impact receipt of credits and product volume?"
-        bg_color: "white"
-        sub_color: "var(--stratus)"
+      <p> I led planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This guidance supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets. I then translated findings into UX artifacts to aid with next-step planning and all future discussions. </p> 
 
-      - sub: "How might solving this problem impact the Receiver, if at all?"
-        bg_color: "white"
-        sub_color: "var(--stratus)"
-        
-      - sub: "What are current perceptions or interactions with our application?"
-        bg_color: "white"
-        sub_color: "var(--stratus)"
     gallery:
         images:
             - src: "/images/dsd-process-1.png"
@@ -130,66 +116,57 @@ segments:
   - layout: split
     bg_color: white
     left:
-     col: 7
+     col: 11
      type: text
      label: "Key Research Findings"
      header: "How did research shape the design? "
      body: >
         In addition to critical insights into the environment and day-to-day life of a DSD Receiver, we identified a number of gaps and challenges that hindered the success of Receivers. Since many of these gaps intersected with other systems and roles that were far beyond the scope of our product or irrelevant to the current business case, we offered our suggestions and emphasized what role our product team might play in next steps. 
      header_color: "var(--earth)"
-    right:
-      col: 5
-      type: callout
-      callouts:
-      - header: Our solution should...
-        sub: >
-          <ul>
-          <li>improve visibility</li>
-          <li>simplify complexities where possible</li>
-          <li>NOT create additional work</li>
-          <li>add value for Receivers AND business</li>
-          </ul>
+ 
 
 
     icons:
+        shadow: false
+        shadow_color: "var(--golden)"
         sets:
         - material: "forum"
-          header: Shifting Priorities
+          header: Not Create More Work
           text: "We observed work environments that constantly pulled Receivers' attention in different directions. Their work is highly time-sensitive and requires constant prioritization and communication."
           col: 3
         
 
         - material: "desktop_mac"
-          header: Many Tools + Devices
+          header: Simplify Complexities
           text: "We observed Receivers switching between tools and devices as they shifted between tasks. Receivers rely on multiple, required third-party tools and devices."
           col: 3
         
 
 
         - material: "visibility_off"
-          header: Needed Visibility
+          header: Improve Visibility
           text: "We heard from both Receivers and Store Managers that success was achieved through regular communication. Limited visibility into other store activities increases coordination effort."
           col: 3
         
 
         - material: "assignment"
-          header: Unfamiliar with App
+          header: Add Value for Receivers
           text: "We confirmed our assumption that Receivers recognized our application, but not all interacted with it. It was considered a 'Night Crew App,' not relevant to their work."
           col: 3
         
 
   - layout: split
     bg_color: "var(--porridge)"
-    left:
+    right:
       type: image
       images:
         - src: "images/dsd-sketch.png"
           alt: A rough sketch of a screen with notes depicting a list of vendors and times
           caption: A sample sketch from one of our sessions. 
-    right:
+    left:
       type: text
-      label: "Ideation"
-      header: "What should we build?"
+      label: "Process"
+      header: "Ideation"
       body: >
 
         <p>I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas. We narrowed a wide set of directions to two solutions for testing.</p>
@@ -214,8 +191,8 @@ segments:
     bg_color: "var(--porridge)"
     left:
       type: text
-      label: "Testing & Iteration"
-      header: "Is this the right solution?"
+      label: "Process"
+      header: "Testing & Iteration"
       header_color: "var(--earth)"
       body: >
         We tested concepts with in-store Receivers, walking through designs and asking targeted questions to evaluate value, priority, usability, and clarity. As the designs evolved, we gathered feedback at key stages and coordinated with engineering on technical feasibility.
@@ -258,6 +235,6 @@ segments:
         <p>
         Had I remained on the team, I'd be eager to measure adoption among Receivers and monitor any impact on unclaimed vendor credits relative to usage metrics. 
         </p>
-      header_color: "var(--seafoam)"
+      header_color: "var(--nimbus)"
       body_color: "var(--nimbus)"
 ---

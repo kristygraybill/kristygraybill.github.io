@@ -5,14 +5,10 @@
     LEFT COLUMN
   -->
 
-<div class="segment-left col-lg-{{ include.segment.left.col | default: 6 }} col-md-12">
+<div class="segment-left col-lg-{{ include.segment.left.col | default: 6 }} col-md-11">
   {% case include.segment.left.type %}
 
-    <!-- Cover -->
-      {% when "cover" %}
-        <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:cover; height:100%;"></div>
 
-    <!-- Multiple Images -->
     {% when "image" %}
         <div class="segment-image">
             {% for images in include.segment.left.images %}
@@ -55,14 +51,14 @@
   -->
 
     {% if include.segment.right %}
-<div class="segment-right col-lg-{{ include.segment.right.col | default: 6 }} col-md-12">
+<div class="segment-right col-lg-{{ include.segment.right.col | default: 5 }} col-md-11">
     {% case include.segment.right.type %}
     
-    <!-- Cover -->
+    <!-- Cover 
     {% when "cover" %}
         <div class="segment-cover" style="background-image:url('{{ include.segment.right.src | relative_url }}');">
         </div>
-
+-->
     <!-- Multiple Images -->
     {% when "image" %}
         <div class="segment-image">
@@ -147,35 +143,49 @@
 
 
 <!-- Icons -->
-  {% if include.segment.icons and include.segment.icons.sets %}
+{% if include.segment.icons and include.segment.icons.sets %}
+  <div style="color: {{ include.segment.icons.text_color | default: 'inherit' }};">
+    
     {% if include.segment.label %}
       <div class="segment-icon row">
-          <p class="segment-label label"
-              style="color: {{ include.segment.header_color | default: 'inherit' }};">
+          <p class="segment-label label" style="color: inherit;">
               {{ include.segment.label }}
           </p>
       </div>
     {% endif %}
+    
     <div class="row">
         <div class="segment-label-col row icon">
             {% for item in include.segment.icons.sets %}
             <div class="col-md-{{ item.col | default: '3' }}">
+                
                 {% if item.material %}
-
-                    <i class="mi material-icons">{{ item.material | default:'check' }}</i>
-
+                  <!-- FIXED: Now inherits color AND implements dynamic shadow control -->
+                  <i class="mi material-icons" 
+                     style="color: inherit;
+                            {% if include.segment.icons.shadow == true %}
+                              filter: drop-shadow(2px 4px 6px {{ include.segment.icons.shadow_color | default: 'rgba(0,0,0,0.3)' }});
+                            {% else %}
+                              filter: none;
+                            {% endif %}">
+                      {{ item.material | default:'check' }}
+                  </i>
                 {% endif %}
 
                 {% if item.header %}
-                <h2>{{ item.header }}</h2>
+                <!-- FIXED: Added inherit color so subheaders respect custom text colors -->
+                <h2 style="color: inherit;">{{ item.header }}</h2>
                 {% endif %}
 
                 {% if item.text %}
-                <p style="color: {{ item.text_color | default: 'inherit' }};">{{ item.text }}</p>
+                <p style="color: inherit;">{{ item.text }}</p>
                 {% endif %}
+                
               </div>
-              {% endfor %}
+            {% endfor %}
           </div>
         </div>
+        
+  </div>
       {% endif %}
 </div>
