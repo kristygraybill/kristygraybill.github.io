@@ -27,7 +27,7 @@ hero:
         <p>
         Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit.
         </p>
-        <p>This revealed a clear opportunity to extend the product into these workflows and to better understand how we might drive revenue recovery and strengthen compliance at both the store and enterprise levels.
+        <p>This information revealed a potential opportunity to extend our product, an associate-facting task management application, into these workflows. How might we drive revenue recovery and strengthen compliance at both the store and enterprise levels?
         </p>
     body_color: "var(--earth)"
     col: 7
