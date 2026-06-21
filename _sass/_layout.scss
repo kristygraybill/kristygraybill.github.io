@@ -579,7 +579,7 @@ footer {
 
 .hero-cover {
   background-position: bottom;
-  background-size:contain;
+  background-size: 100% auto;
 }
 
 .hero-text-block {
@@ -965,7 +965,8 @@ div.segment-right > div:first-child {
     transform: translateY(0);
     opacity: 1;
     transition-delay: 0.3s;
-    padding: 8px 0px;
+    padding: 8px 8px;
+    background-color: var(--nimbus);
   }
 
   /* H2 shows second */
@@ -1013,7 +1014,7 @@ div.segment-right > div:first-child {
     position: relative;
     font-family: $font-family-sans;
     line-height: 1.4em;
-    font-size: 1.3em;
+    font-size: 1.24em;
   }
 
   .row {
@@ -1092,7 +1093,6 @@ div.segment-right > div:first-child {
     h1 {
       font-size: .8em;
       width: 100%;
-      color: var(--electric);
       line-height: 1.4em;
       font-weight: 400;
       margin: 0px 0px;
@@ -1241,7 +1241,6 @@ div.segment-right > div:first-child {
     h1 {
       font-size: .8em;
       width: 100%;
-      color: var(--seafoam);
       line-height: 1.4em;
       font-weight: 400;
       margin: 0px 0px;
