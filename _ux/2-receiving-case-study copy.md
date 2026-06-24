@@ -1,8 +1,8 @@
 ---
 layout: project-ux
-title: "Workflow Architecture"
+title: "How can an app for Night Crew Managers improve delivery issues?"
 client: "Kroger - Grocery Retailer"
-tags: [Process Mapping]
+tags: [Process Mapping, User Testing, Android, Associate Experience ]
 image: "images/MD-delivery-w.png"
 id: myday
 summary: Visualizing complex workflows to establish operational transparency
@@ -16,7 +16,7 @@ hero:
     src: "images/MD-delivery-w.png"
   right:
     type: text
-    header: "How might a Night Crew Management App help improve delivery issues?"
+    header: "How can an app for Night Crew Managers improve delivery issues?"
     header_color: "var(--tokyo)"
     body: >
       <p>

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     // Find the elements we want to animate
-    const elements = entry.target.querySelectorAll('h2, h1, .dek');
+    const elements = entry.target.querySelectorAll('h2, h1, .dek, p');
 
     if (entry.isIntersecting) {
       // 1. Entering the screen: Add the class

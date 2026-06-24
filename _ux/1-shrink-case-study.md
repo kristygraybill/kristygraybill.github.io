@@ -1,8 +1,8 @@
 ---
 layout: project-ux
-title: "Decision Support"
+title: "How can a task management app help prevent shrink?"
 client: "Kroger - Grocery Retailer"
-tags: [End-to-End]
+tags: [Discovery, Research, Android, Associate Experience]
 image: "/images/dsd-vendor-w.png"
 id: DSD
 summary: "Establishing a centralized hub for vendor oversight and store-level decision support."
@@ -20,7 +20,7 @@ hero:
     col: 5
   right:
     type: text
-    header: "How can a 'Task Management' app help prevent shrink?"
+    header: "How can a task management app help prevent shrink?"
     header_color: "var(--oak)"
     label: Problem + Opportunity
     body: >
