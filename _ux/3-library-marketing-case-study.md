@@ -1,8 +1,8 @@
 ---
 layout: project-ux
-title: "Institutional Service Design"
+title: "How can a small, in-house design team make a greater impact?"
 client: "Free Library of Philadelphia"
-tags: [Service Design]
+tags: [Service Design, User Testing, Prototyping, Process Improvement]
 image: "images/flp-comms-w.png"
 id: myday
 summary: "Bridging public user needs and internal workflows to strengthen institutional communication."
@@ -16,7 +16,7 @@ hero:
     src: "images/flp-comms-w.png"
   right:
     type: text
-    header: "How can a small, in-house design team make a greater impact on event promotion?"
+    header: "How can a small, in-house design team make a greater impact?"
     header_color: "var(--earth)"
     body: >
       <p>

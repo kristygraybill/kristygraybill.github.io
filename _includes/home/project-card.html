@@ -6,14 +6,9 @@
         <div class="descriptions">
 
           <div class="project__content">
-                          {% if include.tags %}
-              <ul class="project__tag">
-                {% for tag in include.tags %}
-                  <li class="project__tag">{{ tag }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
+                          
             <h3 class="project__title">{{ include.title }}</h3>
+            <p class="project__client">{{include.client }}</p>
           </div>
         </div>
       </div>
@@ -26,9 +21,16 @@
       </div>
   </a>
 
-              <div class="project__summary">    
-                <p class="project__client">{{include.client }}</p>
+              <div class="project__summary">
+                {% if include.tags %}
+              <ul class="project__tag">
+                {% for tag in include.tags %}
+                  <li class="project__tag">{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}    
+                <!--
                 <p class="">
-                {{ include.summary | default: "test" }}
+                {{ include.summary | default: "test" }}-->
               </div>
 </div>
