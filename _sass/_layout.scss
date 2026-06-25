@@ -134,6 +134,8 @@ button:hover .material-icons {
   letter-spacing:.02em;
   font-size: 16px;
   font-weight: 350;
+  position:relative;
+  top:-100px;
 }
 
 h2 {
@@ -586,7 +588,7 @@ footer {
 }
 
 .hero-text-block {
-  padding: 62px;
+  padding: 164px 64px 64px 64px;
 }
 
 .hero-text {
