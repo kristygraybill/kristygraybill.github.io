@@ -71,16 +71,16 @@ button {
   font-size: 1.4em;
   font-family: 'Fira Sans', sans-serif;
   cursor: pointer;
-  border: 2px solid var(--earth);
   border-radius: 2em;
   padding: .2em  1em;
   display: flex;
   align-items: center;
-  margin: 2em;
+  margin: 1em 0 3em 0;
+  align-items:center;
 
   /* 1. Define the 45-degree "Double Width" Gradient */
   /* We make it 300% wide so the transition feels smooth and angled */
-  background: linear-gradient(45deg, white 50%, transparent 50%);
+  background: linear-gradient(45deg, var(--seafoam) 50%, transparent 50%);
   background-size: 300%;
   background-position: 100%; /* Start on the transparent side */
   color: var(--earth);
@@ -1117,8 +1117,8 @@ div.segment-right > div:first-child {
   padding-bottom: 100px;
 
     button {
-      outline: solid 2px white;
-      color: white;
+    border: 2px solid var(--seafoam);
+      color: var(--seafoam);
     }  
     button:hover {
        color: var(--earth); 
@@ -1278,7 +1278,11 @@ div.segment-right > div:first-child {
   position: relative;
   padding-bottom: 140px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
+
+  button {
+        border: 2px solid var(--earth);
+  }
   
 
   .row {
