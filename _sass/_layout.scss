@@ -425,9 +425,15 @@ $max-width: 1200px;
     }
   }
 
-  .intro h1 {
-    font-size: 1.3em;
+  #intro {
+    .prime {
+      max-width: 180px;
+    }
+
+    h1 {
+    font-size: 2.6em;
   }
+}
 
   .site-nav .nav-links {
     width: 100%;
