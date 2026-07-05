@@ -75,7 +75,7 @@ button {
   padding: .2em  1em;
   display: flex;
   align-items: center;
-  margin: 1em 0 3em 0;
+  margin: 1em 0 1em 0;
   align-items:center;
 
   /* 1. Define the 45-degree "Double Width" Gradient */
@@ -425,7 +425,7 @@ $max-width: 1200px;
     }
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: 1.3em;
   }
 
@@ -976,16 +976,15 @@ div.segment-right > div:first-child {
   h1.is-visible .reveal-wrapper {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 0.3s;
+    transition-delay: 0.0s;
     padding: 8px 8px;
-    background-color: var(--porridge);
   }
 
   /* H2 shows second */
   h2.is-visible .reveal-wrapper {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 0.0s; /* Delay it slightly */
+    transition-delay: 0.3s; /* Delay it slightly */
     padding: 8px 0px;
   }
 
@@ -1018,7 +1017,11 @@ div.segment-right > div:first-child {
   text-align: center;
 
 
-  h2 {
+  .prime {
+    position:relative; top:-50px; align-self:center; height:auto; max-width:192px; width:fit-content; z-index: 1; margin:1em 0 2em 0;
+  }
+
+  h1 {
     font-family: $font-family-serif;
     font-size: 4em;
     top: -100px;
@@ -1026,8 +1029,13 @@ div.segment-right > div:first-child {
     line-height: 1em;
     margin-bottom:1em;
 
+
+    .is-visible {
+      background-color: none;
+    }
   }
-  h1 {
+
+  h2 {
     top: -100px;
     position: relative;
     font-family: $font-family-sans;
@@ -1036,9 +1044,10 @@ div.segment-right > div:first-child {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2em;
-
+    
     .reveal-wrapper {
       background-color: $ruby;
+      padding: 8px 8px;
     }
   }
 
@@ -1100,6 +1109,7 @@ div.segment-right > div:first-child {
       width: 100%;
       text-align: center;
     }
+
     .dek {
       color: var(--earth);
       text-align:center;
@@ -1146,8 +1156,12 @@ div.segment-right > div:first-child {
       margin: 0px 0px 3em 0px;
       text-transform: uppercase;
       letter-spacing: .18em;
-    }
-    h2 {
+      
+      .reveal-wrapper{
+      background-color: white;}
+   }
+    
+     h2 {
       font-size: 5em;
       font-weight: 600;
       font-family: $font-family-serif;
@@ -1298,7 +1312,11 @@ div.segment-right > div:first-child {
       margin: 0px 0px 3em 0px;
       text-transform: uppercase;
       letter-spacing: .18em;
+      
+      .reveal-wrapper{
+      background-color: white;
     }
+   }
 
     h2 {
       font-size: 5em;
