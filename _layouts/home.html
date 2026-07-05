@@ -3,122 +3,118 @@ layout: base
 ---
 
 <section class="home">
-<section id="intro">
-  <div class="row intro">
+  <section id="intro">
+    <div class="row intro">
 
-    <div class="row col-12">
-      <div class="row col-6">
-<h2><span style="color: var(--tokyo);" class="reveal-wrapper 1">Senior</br>Multi-Disciplinary</br>Designer</span></h2>
-<h1><span style="color: var(--earth);" class="reveal-wrapper 2">Currently Open to Opportunities</span></h1>
-<p><span style="color: var(--earth);" class="reveal-wrapper"><b>Let's talk. </b>kristy.graybill @ gmail.com</span></p>
+      <div class="row col-12">
+        <div class="row col-6">
+          <img class="responsive prime"
+
+            src="images\gfx-ani-trans.gif" title="Transfiguration" alt="a visual treat in the form of a round, animated 3-eyed face transforming into an elongated, hair-covered beast and then back" >
+          <h1><span style="color: var(--tokyo);"
+              class="reveal-wrapper 1">Senior</br>Multi-Disciplinary</br>Designer</span></h1>
+          <h2><span style="color: white;" class="reveal-wrapper 2">Currently Open to Opportunities</span></h2>
+          <p><span style="color: var(--earth);" class="reveal-wrapper 3"><b>Let's talk. </b>kristy.graybill @
+              gmail.com</span></p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
- <section id="UX">
-  <div class="row UX">
-    
-    <div class="row col-11">
-      
-      <div class="row col-lg-9 col-md-12">
-        <h2><span class="reveal-wrapper">architecture for action</span></h2>
-        <h1 class="section"><span class="reveal-wrapper">Research + Strategy <span style="white-space:nowrap">+ Experience Design</span></span></h1>
-        <p class="dek">Specialized expertise in transforming intricate operational processes into intuitive digital experiences</p>
+  <section id="UX">
+    <div class="row UX">
+
+      <div class="row col-11">
+
+        <div class="row col-lg-9 col-md-12">
+          <h1 class="section"><span class="reveal-wrapper">UX Research, Strategy, + Design </span></h1>
+          <div class="row col-lg-12 col-md-12">
+            <div class="projects__list">
+              {% for project in site.ux %}
+              {% include home/project-card.html
+              link=project.url
+              image=project.image
+              title=project.title
+              client=project.client
+              summary=project.summary
+              tags=project.tags
+              color=project.color %}
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div> </section>
+
+
+
+  <section id="Motion">
+    <div class="row Motion">
+
+      <div class="row col-11">
+        <div class="row col-lg-10">
+          <h1 class="section"><span class="reveal-wrapper">Motion Graphics</span></h1>
+          <a href="https://vimeo.com/graybill" target="_blank" class="light">
+            <button>More projects on Vimeo <span
+              class="material-icons">arrow_right_alt</span></button> </a>
+        </div>
+
+
+        <div class="video col-lg-12 col-md-12">
+          <div class="mo-hov">
+            <img style="" src="images\W-rabies.gif" title="WIRED Magazine">
+          </div>
+          <div class="mo-hov">
+            <img style="" src="images\ybe-brain.gif" title="MiND TV - WYBE 35">
+          </div>
+          <img src="images\abq-365-logo.gif" title="Visit ABQ">
+          <img src="images\W-anonymous.gif" title="WIRED Magazine">
+          <img style="" src="images\W-dorsey.gif" title="WIRED Magazine">
+          <img src="images\ybe-perspective.gif" title="MiND TV - WYBE 35">
+          </div>
+
+
+
       </div>
 
-      <div class="row col-lg-12 col-md-12">
-         <div class="projects__list">
-            {% for project in site.ux %}
-              {% include home/project-card.html 
-                link=project.url 
-                image=project.image 
-                title=project.title 
-                client=project.client 
-                summary=project.summary 
-                tags=project.tags 
-                color=project.color %}
+    </div>
+  </section>
+
+
+
+
+  <section id="Graphic">
+    <div class="row graphic">
+      <div class="row col-11">
+        <div class="row col-lg-10">
+          <h1 class="section"><span class="reveal-wrapper">Graphics, Branding + Communication</span></h1>
+                  <a href="https://behance.com/graybill" target="_blank" class="light"><button>More projects on Behance <span
+              class="material-icons">arrow_right_alt</span></button></a> </div>
+
+
+        <div class="row col-lg-12">
+          <div class="projects__list">
+            {% for project in site.graphic %}
+            {% include home/image-card.html
+            link=project.url
+            image=project.image
+            title=project.title
+            client=project.client
+            tags=project.tags
+            color=project.color %}
             {% endfor %}
           </div>
         </div>
 
-    </div>
-
-  </div>
-</section>
 
 
 
-<section id="Motion">
-  <div class="row Motion">
-
-    <div class="row col-11">
-
-      <div class="col-lg-10 col-md-12">
-        <h2><span class="reveal-wrapper">a bridge to understanding</span></h2>
-        <h1 class="section"><span class="reveal-wrapper">Motion Graphics</span></h1>
-            <p class="dek">Over six years of focused Motion experience across social, editorial, & broadcast, bringing static concepts to life.</p>
-      </div>
-
-
-      <div class="video col-lg-12 col-md-12">
-        <div class="mo-hov">
-          <img style="" src="images\W-rabies.gif" title="WIRED Magazine">
-        </div>
-        <div class="mo-hov">
-          <img style="" src="images\ybe-brain.gif" title="MiND TV - WYBE 35">
-        </div>
-        <img src="images\abq-365-logo.gif" title="Visit ABQ">
-        <img src="images\W-anonymous.gif" title="WIRED Magazine">
-        <img style="" src="images\W-dorsey.gif" title="WIRED Magazine">
-        <img src="images\ybe-perspective.gif" title="MiND TV - WYBE 35">
-        <!--<img style="" src="images\ybe-fishbowl.gif"> -->
-      </div>
-
-      <a href="https://vimeo.com/graybill" target="_blank" class="light"><button>More projects on Vimeo <span class="material-icons">arrow_right_alt</span></Button></a>
-
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
- <section id="Graphic">
-  <div class="row graphic">
-    <div class="row col-11">
-        <div class="row col-lg-10">
-              <h2><span class="reveal-wrapper">visual storytelling</span></h2>
-              <h1 class="section"><span class="reveal-wrapper">Branding & Communication</span></h1>
-      <p class="dek">Proven expertise in maintaining brand integrity across physical and digital environments with regional and industry recognition</p>
-    </div>
-
-
-    <div class="row col-lg-12">
-      <div class="projects__list">
-        {% for project in site.graphic %}
-          {% include home/image-card.html 
-            link=project.url 
-            image=project.image 
-            title=project.title 
-            client=project.client 
-            tags=project.tags 
-            color=project.color %}
-        {% endfor %}
       </div>
     </div>
-
-      <a href="https://behance.com/graybill" target="_blank" class="light"><button>More projects on Behance <span class="material-icons">arrow_right_alt</span></Button></a>
-
-
-</div>
-  </div>
-</section>
+  </section>
 
 
 
