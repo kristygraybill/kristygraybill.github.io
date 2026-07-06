@@ -892,7 +892,7 @@ div.segment-right > div:first-child {
 
         h3 {
           font-family: $font-family-alt;
-          margin: 1.2em .4em .6em .4em;
+          margin: 1.2em 4px 0.6em;
           font-weight: 600;
           line-height: 1.18em;
           font-size: 1.26em;
@@ -900,7 +900,7 @@ div.segment-right > div:first-child {
         }
 
         p {
-          margin: .4em;
+          margin:  4px .4em;
           font-weight: 400;
           color: var(--tokyo);
         }
@@ -1415,5 +1415,20 @@ div.segment-right > div:first-child {
   .dek {
     font-size: 1.1em;
   }
+
+  .project .descriptions h3 {
+    font-size: 1.8em;
+  
+  }
+
+  .project .descriptions p {
+    font-size: 1.0em;
+  }
+
+  li.project__tag {
+    font-size: .8em;
+  }  
+
+
 
 }
