@@ -1,8 +1,7 @@
 <div class="more">
     <div>
-        <p>Want to learn more about this project?</p>
-        <p style="font-size:smaller">Contact me:<br>
-            kristy.graybill @ gmail.com </p>
+        <p>To learn more about this project, reach out.</p>
+        <p style="font-size:smaller">kristy.graybill @ gmail.com </p>
     </div>
 
     <div>
@@ -21,24 +20,17 @@
             {% assign prev_project = projects.last %}
         {% endif %}
 
-        <div class="next-project-footer" style="
-            text-align:right;
-            text-decoration:none;
-            color: var(--electric);
-            display: flex; /* Added to help align them side-by-side if desired */
-            justify-content: flex-end;
-            gap: 60px;
-            ">
+        <div class="next-project-footer" style="">
 
-            <a href="{{ prev_project.url | relative_url }}" class="prev-card" rel="prev" style="text-align: left;">
-                <div class="next-label">Previous Project</div>
-                <div class="next-title">{{ prev_project.title }}</div>
+            <a href="{{ prev_project.url | relative_url }}" class="prev-card" rel="prev">
+                <!--<div class="next-label">Previous Project</div>
+                <div class="next-title">{{ prev_project.title }}</div>-->
                 <i class="mi material-icons">arrow_back</i> 
             </a>
 
-            <a href="{{ next_project.url | relative_url }}" class="next-card" rel="next" style="text-align: right;">
-                <div class="next-label">Next Project</div>
-                <div class="next-title">{{ next_project.title }}</div>
+            <a href="{{ next_project.url | relative_url }}" class="next-card" rel="next">
+                <!--<div class="next-label">Next Project</div>
+                <div class="next-title">{{ next_project.title }}</div>-->
                 <i class="mi material-icons">arrow_forward</i> 
             </a>
         </div>

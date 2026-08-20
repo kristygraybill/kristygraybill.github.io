@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "How can a task management app help prevent shrink?"
+title: "How a task management app helps prevent shrink"
 client: "Kroger - Grocery Retailer"
 tags: [Discovery, Research, Android, Associate Experience]
 image: "/images/dsd-vendor-w.png"
@@ -9,6 +9,8 @@ summary: "Establishing a centralized hub for vendor oversight and store-level de
 color: "var(--seafoam)"
 scolor: "#000"
 link: /ux/shrink-case-study
+sitemap: false
+robots: noindex, nofollow
 
 
 
@@ -20,17 +22,23 @@ hero:
     col: 5
   right:
     type: text
-    header: "How can a task management app help prevent shrink?"
+    header: "How a task management app helps prevent shrink"
     header_color: "var(--oak)"
     label: Problem + Opportunity
     body: >
         <p>
-        Enterprise data showed that stores were losing millions in revenue because damaged or expired goods weren't being reported for credit.
+        Enterprise data showed that stores were losing millions in revenue because <mark>damaged or expired goods weren't being reported for credit.</mark>
         </p>
-        <p>This information revealed a potential opportunity to extend our product, an associate-facing task management application, into these workflows. How might we drive revenue recovery and strengthen compliance at both the store and enterprise levels?
-        </p>
+        <p>As a team responsible for an associate-facing task management application, this proved an interesting challenge. </p>
     body_color: "var(--earth)"
     col: 7
+
+callout:
+  problem_statment: >
+       <h3>How might we</span> drive revenue recovery related to the store role responsible for receiving store credit, the Direct-Store Deliveries (DSD) Receivers?
+       </h3>
+
+
 
 outline_role:
   title: "UX Design Lead"
@@ -47,7 +55,7 @@ outline_methods:
   - Workshop Facilitation
   - Product Design
   - Interactive Prototyping
-  - User Research & Testing
+  - User Research + Testing
 
 outline_medium: "Android"
 outline_bg_color: "var(--porridge)"
@@ -56,162 +64,220 @@ segments:
   - layout: split
     bg_color: "var(--earth)"
 
+    left:
+      col: 5
+      type: "list"
+      label: "Discovery"
+      header: "What do we need to know to be successful?"
+      subheader: "Methods & Artifacts"
+      header_color: "var(--seafoam)"
+      subheader_color: "var(--nimbus)"
+      list_color: "var(--nimbus)"
+      list:
+        - sub: Research Planning + Design
+
+        - sub: Contextual Interviews
+
+        - sub: Stakeholder Interviews
+
+        - sub: Behavioral Journey Map
+
+        - sub: SOP Gap Analysis
+
+
+
+
+
     right:
-      col: 12
+      col: 7
       type: text
-      label: "Process"
-      header: "Current State"
-      body: >
-         <p>I conducted a series of discovery sessions with stakeholders and cross-functional design teams, documenting insights on a central digital whiteboard. This effort streamlined our focus on shrink, clarified user-centered design challenges, and synchronized our roadmap with adjacent initiatives.</p> 
-
-      header_color: "var(--nimbus)"
       body_color: "var(--nimbus)"
+      body: 
+        <h3>How are credits redeemed and by whom?</h3>
+         <p>I recognized that the DSD Receiver role, who handles the third-party vendor management and deliveries to the store, was often been conflated with warehouse receiving. I conducted sessions with stakeholders and cross-functional design teams to help first bring clarity to this role, familiarity with standard operating procedures, and technical considerations from cross-functional teams.</p> 
+         <h3>What makes a DSD Receiver successful in receiving credits?</h3>
+         <p>With this knowledge, I more defined what we needed to learn and created guidance for in-store interviews, observations, and documentation. This guidance supported a three consultants, an assisting UX designer, and our Product Manager who would be conducting research across a range of stores of different sizes, regions, and markets. </p>
 
-    icons:
-      text_color: "var(--nimbus)"
-      shadow: false
-      sets:
-      - material: "my_location"
-        header: Focusing Our Goal
-        text: >
-          We understood from our enterprise-level SME that shrink resulted greatly from outstanding credits and from too much vendor product. We understood that the Receiver had many responsibilities beyond this, but we'd need to focus results in this space.
-        col: 4
+
+    gallery:
+        images:
+            - src: "/images/dsd-process-1.png"
+              alt: "Receiving workflow"
+              caption: Behavioral Journey Map 
+              caption_color: "var(--nimbus)"
+              col: 6
+
+            - src: "/images/dsd-process-2.png"
+              alt: "Vendor intake"
+              caption: Behavioral Journey Map
+              caption_color: "var(--nimbus)"
+              col: 6
+
+    #icons:
+      #text_color: "var(--nimbus)"
+      #shadow: false
+      #sets:
+      #- material: "my_location"
+      #  header: Focusing Our Goal
+      #  text: >
+      #    We understood from data provided by our enterprise-level SME that, while the Receiver had many responsibilities, our focus should remain on shrink resulting from outstanding credits and from too much vendor product.
+      #  col: 4
       
-      - material: "group_add"
-        header: Known Challenges
-        text: >
-          Our existing application was tailored to work related to receiving distribution center product. Receivers' work rarely intersected with this, if at all. We'd need to develop for a net new user who was equipped with separate, third-party tools that they used to receive product.
-        col: 4
+      #- material: "group_add"
+      #  header: Known Challenges
+      #  text: >
+      #    While there were similarities in work being done by Receivers and our product's users, there were significant differences. We'd need to develop for a net new user who relied on separate, third-party tools.
+      #  col: 4
 
-      - material: "handshake"
-        header: Strategic Partnerships
-        text: >
-         A separate team was working with a vendor to advance features of a third-party application used by the Receiver. Aligning with this team early, we had a clear understanding of their current and future development and their limitations.
-        col: 4
+      #- material: "handshake"
+      #  header: Strategic Partnerships
+      #  text: >
+      #   Another team was actively improving a third-party application used by the Receiver. We aligned with this team to help ensure we had a clear understanding of current and future development and their limitations.
+      #  col: 4
     
 
 
   - layout: split
     bg_color: white
     left:
-     col: 11
-     type: text
-     label: "Process"
-     header: "Discovery Research"
-     body: >
-      <p> I led planning for this research: defining what we needed to learn and creating guidance for in-store interviews, observations, and documentation. This guidance supported a group of consultants conducting research across a range of stores of different sizes, regions, and markets. I then translated findings into UX artifacts to aid with next-step planning and all future discussions. </p> 
-
-    gallery:
-        images:
-            - src: "/images/dsd-process-1.png"
-              alt: "Receiving workflow"
-              caption: Sample of a Living Document - Process Map
-              col: 6
-            - src: "/images/dsd-process-2.png"
-              alt: "Vendor intake"
-              caption: Includes notes on SOP, variations of practices, and other details in swim lanes
-              col: 6
-
-
-  - layout: split
-    bg_color: white
-    left:
-     col: 11
+     col: 12
      type: text
      label: "Key Research Findings"
-     header: "How did research shape the design? "
-     body: >
-        In addition to critical insights into the environment and day-to-day life of a DSD Receiver, we identified a number of gaps and challenges that hindered the success of Receivers. Since many of these gaps intersected with other systems and roles that were far beyond the scope of our product or irrelevant to the current business case, we offered our suggestions and emphasized what role our product team might play in next steps. 
+     # body: >
+     #   I translated our teams' findings into artifacts that showcased <mark>critical insights into the environment and day-to-day life of a DSD Receiver</mark> and called out <mark>gaps and challenges that hindered the success of Receivers.</mark>
      header_color: "var(--earth)"
+     body_color: var(--stratus)
+
  
 
 
     icons:
-        shadow: false
-        shadow_color: "var(--golden)"
+        color: "var(--oak)"
+        bg: true
+        bg_color: "var(--seafoam)"
+        header_color: "var(--oak)"
         sets:
-        - material: "forum"
-          header: Not Create More Work
-          text: "We observed work environments that constantly pulled Receivers' attention in different directions. Their work is highly time-sensitive and requires constant prioritization and communication."
-          col: 3
-        
-
-        - material: "desktop_mac"
-          header: Simplify Complexities
-          text: "We observed Receivers switching between tools and devices as they shifted between tasks. Receivers rely on multiple, required third-party tools and devices."
-          col: 3
-        
-
-
         - material: "visibility_off"
-          header: Improve Visibility
+          header: >
+            "Vendors have my full attention when they are making deliveries or in the store."
+          text: "A DSD Receiver ensures that deliveries are made in a timely fashion to keep delivery areas from growing congested with many vendors. Like a good host, they needed to remain attentive to vendors while they were a guest to the store."
+          col: 3
+        - material: "forum"
+          header: >
+            "I am not aware of how much of a product the store is receiving until it's arrived."
           text: "We heard from both Receivers and Store Managers that success was achieved through regular communication. Limited visibility into other store activities increases coordination effort."
           col: 3
-        
-
         - material: "assignment"
-          header: Add Value for Receivers
-          text: "We confirmed our assumption that Receivers recognized our application, but not all interacted with it. It was considered a 'Night Crew App,' not relevant to their work."
+          header: >
+            "Other teammates perform overlapping tasks that complicate workflows."
+          text: "Receivers relied on third-party vendors or store associates to perform certain tasks, while lacking authority over these roles. When tasks were performed poorly or vendors failed to respond, Receivers were absorbing the consequences."
+          col: 3
+
+        - material: "desktop_mac"
+          header: >
+             "I already use multiple apps and tools. I don't need another one."
+          text: "We observed Receivers switching between tools and devices as they shifted between tasks. Receivers rely on multiple, required third-party tools and devices. And, few DSD Receivers interacted with our application as it was not essential to their duties."
           col: 3
         
 
   - layout: split
     bg_color: "var(--porridge)"
     right:
-      type: image
-      images:
-        - src: "images/dsd-sketch.png"
-          alt: A rough sketch of a screen with notes depicting a list of vendors and times
-          caption: A sample sketch from one of our sessions. 
-    left:
+      col: 7
       type: text
-      label: "Process"
-      header: "Ideation"
       body: >
+          <p>
+          Through research and testing, we learned a deeper operational truth. <mark>The biggest barrier to capturing credits wasn't lack of technology, it was workplace dynamics. Top performing Receivers succeeded because of strong communication skills and willingness to hold vendors accountable.</mark>
+          </p>
+          <p>
+          Realizing our solution couldn't fix organizational hierarchy, we shifted our design focus to raise the operational baseline rather than optimize for expert users.
+          </p>
+          <p>
+          We focused on how we might guide and support coverage staff and provide hard data and prompts for receivers to provide objective authority.
+          </p>
+          <p>
+          I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas. We narrowed a wide set of directions to two solutions for testing.
+          </p>
+      body_color: var(--earth)
 
-        <p>I led workshops to translate research into early concepts, using discussion, co-creation, and voting to prioritize ideas. We narrowed a wide set of directions to two solutions for testing.</p>
+    left:
+      type: list
+      label: "Ideation"
+      header: "In what ways can our team help?"
+      subheader: "Methods + Artifacts"
+      col: 5
+      list: 
+        - sub: "Prioritization Workshop"
+        - sub: "Co-Designing Workshop"
+        - sub: "Wireframe Sketches"
 
-        <p>As design lead, I built the prototypes and defined the core interface and interactions through iterative testing and refinement. The final solutions gave Receivers a clear daily task view and a single access point for their tools, replaced paper processes with guided digital workflows, and improved visibility so the entire store could stay aligned.
-        </p>
-      body_color: var(--stratus)
+
     gallery:
         images:
             - src: "/images/dsd-prioritization.png"
               alt: "Vendor intake"
-              caption: Prioritization
+              caption: Prioritization Workshop
+              col: 4
+            - src: "images/dsd-sketch.png"
+              alt:  Sample sketch of a screen with notes depicting a list of vendors and times
+              caption: Sketch from Co-Designing Workshop
+              col: 4
             - src: "/images/dsd-coworking.png"
               alt: "Receiving workflow"
-              caption: Co-Design Workshop
-            - src: "/images/dsd-wireframe.png"
-              alt: "Vendor intake"
-              caption: Concept Sketches
+              caption: Co-Design Workshop 
+              col: 4
+
+
 
 
   - layout: split
     bg_color: "var(--porridge)"
     left:
-      type: text
-      label: "Process"
-      header: "Testing & Iteration"
+      col: 5
+      type: list
+      label: "Testing + Iteration"
+      header: "Will our designs impact the problem?"
       header_color: "var(--earth)"
-      body: >
-        We tested concepts with in-store Receivers, walking through designs and asking targeted questions to evaluate value, priority, usability, and clarity. As the designs evolved, we gathered feedback at key stages and coordinated with engineering on technical feasibility.
-
-        <p>As a part of this effort, I presented the MVP and select future features in a virtual forum for managers across 2,000+ stores.</p>
-
-        <p>Since our junior designer and engineers were invited to sessions and regularly updated on research and testing findings, I was confident when handing off design files for pixel-perfect UI refinement and development. Notes with user-insights for features and quick links to artifacts within my Figma file, paired with open lines of communication, helped ensure the integrity of our designs and kept users at the through-line of decision-making. </p>
       body_color: "var(--stratus)"
-
-
+      subheader: "Methods + Artifacts"
+      subheader_color: "var(--tokyo)"    # Deep blue for the header
+      list_color: "var(--tokyo)"      # Slate gray applied to all bullet points
+      bg_color: ""        # Light gray background for the entire component block
+      list:
+        - sub: "A/B Concept Testing"
+        - sub: "Friction Mapping"
+        - sub: "Mockups, High Fidelity Designs, and Prototypes"
+        - sub: "Stakeholder Feedback Session"
+    
     right:
-      type: image
+      col: 7
+      type: text
+      body: >
+        <p>
+        We tested concepts with in-store Receivers, asking targeted questions to evaluate value, priority, usability, and clarity. As the designs evolved, we gathered feedback at key stages and coordinated with engineering on technical feasibility.
+        </p>
+
+        <p>As design lead, I built the prototypes and defined the core interface and interactions through iterative testing and refinement. <mark>Refined solutions gave Receivers a clear daily task view and a single access point for their tools, replaced paper processes with guided digital workflows, and improved visibility so the entire store could stay aligned.</mark>
+        </p>
+
+        <p>I then presented our refined MVP and select future features in two virtual forums, soliciting further feedback from managers of 2,000+ stores, as our team worked toward a Beta product to pilot.</p>
+      body_color: var(--earth)
+
+
+    gallery:
       images:
+        - src: "/images/dsd-wireframe.png"
+          alt: "Vendor intake"
+          caption: Concept Wireframes
+          col: 4
         - src: "images/dsd-feedback-lofi.png"
           alt: 
           caption: "Feedback from users on early concepts"
+          col: 4
         - src: "images/dsd-feedback-hifi.png"
           alt: 
-          caption: "Feedback from users on low-fi prototypes"
+          caption: "Feedback from users on revised designs"
+          col: 4
 
   - layout: split
     bg_color: "var(--earth)"
@@ -224,16 +290,17 @@ segments:
           position: 
     right:
       type: text
-      label: "Results & Achievements"
-      header: "What changed because of this?"
+      label: "Results + Achievements"
+      header: 
       body: >
         <p>
-        Unlike past projects, my involvement came to an end before the team had developed and released a functioning prototype. </p>
-        <p>
-        Discovery efforts, however, surfaced conversations about larger organizational needs and would inform a future roadmap beyond my contract.
+        Discovery efforts surfaced conversations about larger organizational needs.
         </p>
         <p>
-        Had I remained on the team, I'd be eager to measure adoption among Receivers and monitor any impact on unclaimed vendor credits relative to usage metrics. 
+        My work would inform future research and product roadmap beyond my contract with the team.
+        </p>
+        <p>
+        And, before leaving, I'd worked with the team to establish adoption criteria, baseline metrics, and indicators of the feature's success.  
         </p>
       header_color: "var(--nimbus)"
       body_color: "var(--nimbus)"

@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "How can we better align the Rare Book webpages with visitor needs?"
+title: "How a library aligned webpages to help visitors and researchers"
 client: "Free Library of Philadelphia"
 tags: [UX Advocacy, Data-Driven Redesign, UX/UI Design  ]
 image: "images/flp-rbd-w.png"
@@ -8,6 +8,8 @@ id: myday
 summary: "Architecting discovery systems to provide access to archival collections"
 color: "var(--party)"
 link: /projects/receiving-app
+sitemap: false
+robots: noindex, nofollow
 
 hero:
   bg_color: white
@@ -15,15 +17,16 @@ hero:
     type: cover
     src: "images/flp-rbd-w.png"
   right:
+    label: Problem + Opportunity
     type: text
-    header: "How can we design a user-friendly tool for special collections?"
-    header_color: "var(--tokyo)"
+    header: "How a library aligned webpages to help visitors and researchers"
+    header_color: "var(--earth)"
     body: >
       <p>
        The Free Library's Rare Book Department oversees and connects the public to the library's vast collection of historic objects and artifacts.
       </p>
        <p>
-       The department casually expressed that they were not using a section of our site intended to provide the public with information about collections and related services. When asked why, their team shared their belief that visitors were not finding information and that the information on the pages.
+       The Rare Book department casually expressed that they were not using a section of our site intended to provide the public with information about collections and related services. The Rare Book team shared their belief that visitors were not finding information <mark> so content on the site was often outdated</mark> and <mark>inquiries would be handled through in-person discussion or over the phone.</mark>
       </p>
 
 
