@@ -1465,7 +1465,11 @@ div.segment-right > div:first-child {
 /** Responsive tweaks **/
 @media (max-width: 768px) {
 
-
+  .hero-text-block {
+    h1{
+        font-size: 3em;
+  }
+  }
 
   .segment-label-col {
   div:not(:last-child) {
