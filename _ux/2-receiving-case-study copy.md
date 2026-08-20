@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "How can an app for Night Crew Managers improve delivery issues?"
+title: "How  an app for Night Crew Managers improve delivery issues"
 client: "Kroger - Grocery Retailer"
 tags: [Process Mapping, User Testing, Android, Associate Experience ]
 image: "images/MD-delivery-w.png"
@@ -8,6 +8,8 @@ id: myday
 summary: Visualizing complex workflows to establish operational transparency
 color: "#799AA7"
 link: /projects/receiving-app
+sitemap: false
+robots: noindex, nofollow
 
 hero:
   bg_color: #FFFFFF
@@ -16,11 +18,12 @@ hero:
     src: "images/MD-delivery-w.png"
   right:
     type: text
-    header: "How can an app for Night Crew Managers improve delivery issues?"
+    label: Problem + Opportunity
+    header: "How an app for Night Crew Managers improves delivery issues"
     header_color: "var(--tokyo)"
     body: >
       <p>
-       Delivery issues create real impact, significant time is spent correcting inventory, driving  $8.4M+ loss prevention business cases.
+       Delivery issues create real impact, significant time is spent correcting inventory, driving  <mark>$8.4M+ loss prevention business cases.</mark>
       </p>
       <p>
         I joined the team as a full-time product designer for an application that helped Night Crew Managers’ manage workload from incoming deliveries.
@@ -52,12 +55,27 @@ outline_bg_color: "var(--porridge)"
 segments:
   - layout: split
     bg_color: "var(--earth)"
+
     left:
-     col: 10
+      col: 5
+      type: "list"
+      label: "Discovery"
+      header: "What do we need to know to be successful?"
+      header_color: "var(--electric)"
+      subheader: "Methods & Artifacts"
+      subheader_color: "var(--nimbus)"
+      list_color: "var(--nimbus)"
+      list:
+        - sub: "Stakeholder Mapping"
+        - sub: "Expert Interview"
+        - sub: "Cross-Functional Flowcharts"
+        - sub: "Multi-User Journey Map"
+
+
+
+    right:
+     col: 7
      type: text
-     label: "Process"
-     header: "Research & Discovery"
-     header_color: "var(--seafoam)"
      body: >
         <p>
         As I positioned myself on the team and received historic knowledge from the prior UX teammates and the product manager, I visualized who would be affected by delivery errors. This ensured we considered operational impacts across the store and involved the right stakeholders.
@@ -70,28 +88,32 @@ segments:
       images:
         - src: "images/MD-Process.png"
           alt: "User Mapping"
-          col: 5
+          col: 6
           caption: "Stakeholder Mapping"
         - src: "images/MD-painpoints.png"
-          col: 5
+          col: 6
           alt: "User Map"
           caption: "User Mapping"
 
 
+
+
   - layout: split
-    bg_color: var(--earth)
+    bg_color: white
     left:
      col: 10
      type: text
      label: "Key Research Findings"
-     header: "How did research shape the design? "
      body: >
-        Research revealed many variables among stores and how they operated as a result of their individual size, staff, and the kind of delivery, as examples.
-     body_color: "var(--nimbus)"
-     header_color: "var(--seafoam)"
+     body_color: "var(--charcoal)"
+     header_color: "var(--charcoal)"
 
     icons:
-        text_color: "var(--nimbus)"    
+        color: "var(--electric)"
+        bg: true
+        bg_color: "var(--earth)"
+        header_color: "var(--earth)"
+        text_color: "var(--earth)"    
         sets:
         - material: "group"
           header: Support New User Groups.
@@ -115,21 +137,28 @@ segments:
 
   - layout: split
     bg_color: "var(--porridge)"
-    right:
-      type: image
-      images:
-        - src: "/images/MD-feedback-sample.png"
-          alt: "Sample Feedback Ideation"
-          caption: Sample Feedback Ideation
-
-        - src: "/images/MD-prototype.png"
-          alt: "Sample Prototype File"
-          caption: Sample Prototype File
-
     left:
+      col: 5
+      type: "list"
+      label: "Design + Feedback"
+      header: "How can our team help?"
+      subheader: "Methods & Artifacts"
+      header_color: "var(--oak)"
+      subheader_color: "var(--earth)"
+      list_color: "var(--oak)"
+      list:
+        - sub: Research Planning + Design
+
+        - sub: Contextual Interviews
+
+        - sub: Stakeholder Interviews
+
+        - sub: Behavioral Journey Map
+
+        - sub: SOP Gap Analysis
+
+    right:
       type: text
-      label: "Process"
-      header: "Design & Feedback"
       body: >
         <p>
         We refined the initial designs to support the fast, hands-on nature of unloading a trailer. While some roles needed detailed delivery information, others only needed to check in inventory quickly. The interface was intentionally focused on what was required in the moment, reducing distractions during physical work.
@@ -166,6 +195,6 @@ segments:
         This work established a foundation for enhancements to improve data accuracy, support adjacent tools, and generate metrics to guide broader loss prevention efforts.
         </li>
         </ul>
-      header_color: "var(--seafoam)"
+      header_color: "var(--electric)"
       body_color: "var(--porridge)"
 ---

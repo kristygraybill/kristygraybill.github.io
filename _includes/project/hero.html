@@ -1,8 +1,8 @@
 {% assign hero = include.hero %}
 
 {% if hero %}
-<div>
-    <div class="row" style="padding: 0">
+<div id="hero">
+    <div class="row" style="padding: 0;background-color: {{ hero.color | default: page.color }};"" >
 
       <div class="hero-cover col-lg-{{ hero.left.col | default: 5 }} col-md-12" style="background-image: url('{{ hero.left.src | default: hero.right.src | relative_url }}'); background-repeat:no-repeat; background-color: {{ hero.color | default: page.color }};">
         {% if hero.left.type == "text" %}

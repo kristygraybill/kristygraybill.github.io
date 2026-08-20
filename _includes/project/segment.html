@@ -5,10 +5,14 @@
     LEFT COLUMN
   -->
 
-<div class="segment-left col-lg-{{ include.segment.left.col | default: 6 }} col-md-11">
+<div class="segment-left col-lg-{{ include.segment.left.col | default: 6 }} col-md-12">
   {% case include.segment.left.type %}
 
+    <!-- Cover -->
+      {% when "cover" %}
+        <div class="segment-cover" style="background-image:url('{{ include.segment.left.src | relative_url }}'); background-size:cover; height:100%;"></div>
 
+    <!-- Multiple Images -->
     {% when "image" %}
         <div class="segment-image">
             {% for images in include.segment.left.images %}
@@ -39,10 +43,45 @@
           <div class="segment-body" style="color: {{ include.segment.left.body_color | default: 'inherit' }};">{{ include.segment.left.body }}</div>
         </div>
 
+    <!-- List -->
+      {% when "list" %}
+        <div class="segment-list" style="background-color: {{ include.segment.left.bg_color | default: 'transparent' }}; padding: 15px; border-radius: 4px;">
+          {% if include.segment.left.label %}
+            <p class="segment-label label" style="color: {{ include.segment.left.header_color | default: 'inherit' }};">{{ include.segment.left.label }}</p>
+          {% endif %}
+          {% if include.segment.left.header %}
+            <h2 class="segment-header header" style="color: {{ include.segment.left.header_color | default: 'inherit' }}; margin-top: 0; margin-bottom: 0.5em;">
+              {{ include.segment.left.header }}
+            </h2>
+          {% endif %}
+          {% if include.segment.left.subheader %}
+            <h3 class="segment-subheader subheader" style="color: {{ include.segment.left.subheader_color | default: 'inherit' }}; margin-top: 0; margin-bottom: 0.5em;">
+              {{ include.segment.left.subheader }}
+            </h3>
+          {% endif %}
+          <div class="contributors__methods">
+            <ul class="list-bullets" 
+                style="
+                    padding-left: 20px; 
+                    list-style-type: disc; 
+                    color: {{ include.segment.left.list_color | default: 'inherit' }};
+                ">
+                {% for item in include.segment.left.list %}
+                    {% if item.sub %}
+                    <li class="sub-item" style="margin-bottom: 0.25em;">
+                        {{ item.sub }}
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+          </div>
+        </div>
+
       {% when "include" %}
         {% include project/{{ include.segment.left.name }}.html %}
     {% endcase %}
   </div>
+
 
 
 
@@ -51,14 +90,14 @@
   -->
 
     {% if include.segment.right %}
-<div class="segment-right col-lg-{{ include.segment.right.col | default: 5 }} col-md-11">
+<div class="segment-right col-lg-{{ include.segment.right.col | default: 5 }} col-md-12">
     {% case include.segment.right.type %}
     
-    <!-- Cover 
+    <!-- Cover -->
     {% when "cover" %}
         <div class="segment-cover" style="background-image:url('{{ include.segment.right.src | relative_url }}');">
         </div>
--->
+
     <!-- Multiple Images -->
     {% when "image" %}
         <div class="segment-image">
@@ -106,6 +145,34 @@
             {% endfor %}
         </div>
 
+        <!-- List -->
+{% when "list" %}
+<div class="segment-list" style="background-color: {{ include.segment.right.bg_color | default: 'transparent' }}; padding: 15px; border-radius: 4px;">
+    
+    <h3 class="list-header h2" style="color: {{ include.segment.right.header_color | default: 'inherit' }}; margin-top: 0; margin-bottom: 0.5em;">
+        {{ include.segment.right.header }}
+    </h3>
+<div class="contributors__methods">
+    <ul class="list-bullets" 
+        style="
+            padding-left: 20px; 
+            list-style-type: disc; 
+            color: {{ include.segment.right.list_color | default: 'inherit' }};
+        ">
+        {% for item in include.segment.right.list %}
+            {% if item.sub %}
+            <li class="sub-item" style="margin-bottom: 0.25em;">
+                {{ item.sub }}
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+</div>
+
+
+
+
     <!-- Text -->
     {% when "text" %}
         <div class="segment-text">
@@ -134,7 +201,7 @@
           <img class="responsive" src="{{ item.src | relative_url }}" alt="{{ item.alt | default: '' }}">
         </div>
             {% if item.caption %}
-              <figcaption>{{ item.caption }}</figcaption>
+              <figcaption style="color: {{item.caption_color | default: $earth }}">{{ item.caption }}</figcaption>
             {% endif %}
         </figure>
     {% endfor %}
@@ -162,19 +229,23 @@
                 {% if item.material %}
                   <!-- FIXED: Now inherits color AND implements dynamic shadow control -->
                   <i class="mi material-icons" 
-                     style="color: inherit;
+                     style="color: {{include.segment.icons.color | default: 'rgba(10,10,10)'}};
                             {% if include.segment.icons.shadow == true %}
-                              filter: drop-shadow(2px 4px 6px {{ include.segment.icons.shadow_color | default: 'rgba(0,0,0,0.3)' }});
+                              text-shadow: -4px 3px {{ include.segment.icons.shadow_color | default: 'rgba(0,0,0,0.3)' }};
                             {% else %}
                               filter: none;
-                            {% endif %}">
+                            {% endif %}
+                            {% if include.segment.icons.bg == true %}
+                              background-color: {{include.segment.icons.bg_color | default: 'rgba(10,10,10)'}};
+                            {% endif %}
+                              ">
                       {{ item.material | default:'check' }}
                   </i>
                 {% endif %}
 
                 {% if item.header %}
                 <!-- FIXED: Added inherit color so subheaders respect custom text colors -->
-                <h2 style="color: inherit;">{{ item.header }}</h2>
+                <h2 style="color: {{include.segment.icons.header_color | default: 'rgba(10,10,10)'}};">{{ item.header }}</h2>
                 {% endif %}
 
                 {% if item.text %}

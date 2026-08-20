@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "How can a small, in-house design team make a greater impact?"
+title: "How a small, in-house design team doubled their impact"
 client: "Free Library of Philadelphia"
 tags: [Service Design, User Testing, Prototyping, Process Improvement]
 image: "images/flp-comms-w.png"
@@ -8,6 +8,8 @@ id: myday
 summary: "Bridging public user needs and internal workflows to strengthen institutional communication."
 color: "#b8b017"
 link: /projects/receiving-app
+sitemap: false
+robots: noindex, nofollow
 
 hero:
   bg_color: white
@@ -16,14 +18,15 @@ hero:
     src: "images/flp-comms-w.png"
   right:
     type: text
-    header: "How can a small, in-house design team make a greater impact?"
-    header_color: "var(--earth)"
+    label: Problem + Opportunity
+    header: "How a small, in-house design team doubled their impact"
+    header_color: "var(--tokyo)"
     body: >
       <p>
        Free Library of Philadelpiha organization serves a diverse population of 1.5 million people by providing a robust lending library, digital resources, and special collections - and over 30,000 events and programs a year. 
       </p>
       <p>
-      In FY 2018, the Design Studio helped promote 750+ programs a year, a far reach from teh 30,000+ that were held at branches across the city. The production process required staff to submit requests 2 months in advance.
+      In FY 2018, the Design Studio <mark>helped promote 750+ programs a year, a far reach from the 30,000+ that were held at branches across the city.</mark> The production process required staff to submit requests 2 months in advance.
       </p>
 
 
@@ -80,6 +83,7 @@ segments:
 
     icons:
       text_color: "var(--nimbus)"
+      header_color: "var(--nimbus)"
       sets:
       - header: We cannot rely on digital promotions.
         text: >
