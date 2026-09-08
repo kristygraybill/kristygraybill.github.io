@@ -1,6 +1,6 @@
 ---
 layout: project-ux
-title: "How  an app for Night Crew Managers improve delivery issues"
+title: "How  an app for Night Crew Managers improves delivery issues"
 client: "Kroger - Grocery Retailer"
 tags: [Process Mapping, User Testing, Android, Associate Experience ]
 image: "images/MD-delivery-w.png"
